@@ -299,12 +299,11 @@ h5 ~ p {
 
 .webdev {
 	margin: 0 auto;
-	
-	img {
-	height: 400px;
-	margin: 5px;
-	}
 }
+
+.webdev img {
+	width: 400px;
+	}
 
 .right ul {
 	list-style-type: none;
