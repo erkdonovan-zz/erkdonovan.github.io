@@ -2,112 +2,296 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<link href='http://fonts.googleapis.com/css?family=Kaushan+Script|Handlee' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'>  
-	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>Erika Donovan</title>
+	<script src="scripts/wufoo.js"></script>
+	<!-- FONTS -->
+	<link href='http://fonts.googleapis.com/css?family=Kaushan+Script|Handlee|Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'> 
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+	<!-- STYLE SHEET -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- FAV ICON -->
+	<link type="image/png" href="images/favicon.png" rel="icon">
+	<!-- FACEBOOK TAGS -->
 	<meta property="og:title" content="Erika Donovan">
 	<meta property="og:type" content="website">
 	<meta property="og:url" content="http://www.erikadonovan.com">
-<!-- 	<meta property="og:image" content="http://drewminns.com/img/profile.jpg"> -->
+	<meta property="og:image" content="http://www.erikadonovan.com/images/logo.png">
 	<meta property="og:site_name" content="Erika Donovan">
 	<meta property="og:description" content="Photographer. Web Developer in the making. Crocheter.">
-
+	<!-- GOOGLE ANALYTICS -->
 	<script>
 		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		})(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
 
 		ga('create', 'UA-48722502-1', 'erikadonovan.com');
 		ga('send', 'pageview');
 
 	</script>
+
 </head>
 <body>
-<!-- site hosted on github -->
-	<div class="menuwrapper clearfix">
-		<div class="menuleft">
-			<p><span class="fa-stack fa-lg">
-				<i class="fa fa-circle fa-stack-2x"></i>
-				<i class="fa fa-refresh fa-stack-1x fa-spin fa-inverse"></i>
-			</span>
-			Erika Donovan: Photographer. Web Developer. Crocheter.</p>
+	<!-- HEADER	-->
+	<div class="header">
+		<div class="wrapper">
+			<div class="wrapperheader">
+				<div class="lightblub mobilehidden">&#10038;</div>
+				<img src="images/logo-with-name.png" alt="Erika Donovan Logo">
+				<h3>Web Developer & Photographer</h3>
+				<ul class="social">
+					<li><a href="mailto:hello@erikadonovan.com"><i class="fa fa-envelope fa-2x"></i></a></li>
+					<li><a href="http://www.twitter.com/erkdonovan/"><i class="fa fa-twitter fa-2x"></i></a></li>
+					<li><a href="https://github.com/erkdonovan"><i class="fa fa-github-alt fa-2x"></i></a></li>
+					<li><a href="https://www.flickr.com/photos/erikaruth/sets/"><i class="fa fa-flickr fa-2x"></i></a></li>
+					<li><a href="http://medium.com/@erkdonovan"><i class="fa fa-bookmark fa-2x"></i></a></li>
+				</ul>
+			</div>
+			<div class="bottom-arrow">
+				<h4>Discover More!</h4>
+				<p>&#8744;</p>
+			</div>
 		</div>
-		<div class="menuright">
-			<ul class="dropdown-menu">
-				<li><a href="">Social &nbsp;&nbsp;<i class="fa fa-arrow-down"></i></a>
-					<ul>
-						<li>
-							<a href="http://www.twitter.com/erkdonovan/">Twitter</a>
-						</li>
-						<li>
-							<a href="https://github.com/erkdonovan">Github</a>
-						</li>
-						<li>
-							<a href="https://www.linkedin.com/in/erikadonovan">LinkedIn</a>
-						</li>
-						<li>
-							<a href="http://www.instagram.com/erkdonovan">Instagram</a>
-						</li>
-						<li>
-							<a href="http://medium.com/@erkdonovan">Medium</a>
-						</li>
-						<li>
-							<a href="http://www.flickr.com/photos/erikaruth">Flickr</a>
-						</li>
-					</ul>
-				</li>
-				<li><a href="mailto:hello@erikadonovan.com">E-mail Me</a></li>
+	</div>
+	<!-- ABOUT -->
+	<div class="section clearfix about" id="about">
+		<div class="wrapper">
+			<div class="aboutme">
+				<div class="aboutimg">
+					<img src="images/erika.jpg" alt="Photo of me">
+				</div>
+				<div class="abouttext">
+					<h2>Hi! I'm Erika!</h2>
+					<h4>I love building websites and taking photos! </h4>
+					<h5>Other things I do:</h5>
+					<div class="skills">
+<!-- 				<div class="skills-box">
+					<div class="box-icon">
+						<i class="fa fa-code"></i>
+					</div>
+					<h5>Coding</h5>
+					<p>HTML5, CSS3, Responsive Design</p>
+				</div>
+				<div class="skills-box">
+					<div class="box-icon">
+						<i class="fa fa-camera"></i>
+					</div>
+					<h5>Photography</h5>
+					<p>Family and Sports</p>
+				</div> -->
+				<div class="skills-box">
+					<div class="box-icon">
+						<i class="fa fa-paint-brush fa-2x"></i>
+					</div>
+					<h5>Creative</h5>
+					<p>Painting & Crocheting</p>
+				</div>
+				<div class="skills-box">
+					<div class="box-icon">
+						<i class="fa fa-strikethrough fa-2x"></i>
+					</div>
+					<h5>Editing</h5>
+					<p>Novellas and short stories</p>
+				</div>
+				<div class="skills-box">
+					<div class="box-icon">
+						<i class="fa fa-cutlery fa-2x"></i>
+					</div>
+					<h5>Baking</h5>
+					<p>Muffins, French Macarons, Cakes</p>
+				</div>
+				<div class="skills-box">
+					<div class="box-icon">
+						<i class="fa fa-check fa-2x"></i>
+					</div>
+					<h5>Certified</h5>
+					<p>Smart Serve and First Aid & CPR</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</div>
+<!-- PHOTOS -->
+	<!-- <div class="photos-me clearfix">
+		<div class="photos-me-box">
+			<img src="images/me1.jpg">
+			<p>I like tech gagets</p>
+		</div>
+		<div class="photos-me-box">
+			<img src="images/me2.jpg">
+			<p>I like the outdoors</p>
+		</div>
+		<div class="photos-me-box">
+			<img src="images/me3.jpg">
+			<p>I can multi-task</p>
+		</div>
+		<div class="photos-me-box">
+			<img src="images/me4.jpg">
+			<p>I like to try new things</p>
+		</div>
+		<div class="photos-me-box">
+			<img src="images/me5.jpg">
+			<p>I help where I can</p>
+		</div>
+	</div> -->
+	<!-- WEB -->
+	<div class="section clearfix webdev" id="webdev">
+		<div class="wrapper">
+			<h2>web development</h2>
+			<div class="left">
+				<h3>My first website...</h3>
+				<p>I taught myself HTML in when I was high school. I was curious about how the Internet worked and how websites were built. My dad bought me my first book on HTML and I taught myself. I built my first website at age 15 for my friends’ sports teams. Recently, I started working in the tech industry and fell back in love with the tech world. I have recently started taking HackerYou courses to learn how to build amazingly, wonderful, creative, static websites. <span class="spannyspan">What I love most is how you can take letters and characters and build something beautiful.</span></p>
+				<!-- <h3>Points and Stuffs</h3>
+				<ul class="bullet-list">
+					<li>point 1</li>
+					<li>point 2</li>
+					<li>point 3</li>
+				</ul> -->
+				<p>I also offer professional photos for those in need!</p>
+				<div class="connect">
+					<a href="mailto:hello@erikadonovan.com?subject=Website" title="Let's Chat about a Website for you!">Let's Chat about a Website for you!</a>
+				</div>
+			</div>
+			<div class="right">
+			<h3>Here is some of my work</h3>
+			<ul>
+				<li><a href="#" class="readMore">HackerYou Project - Home Page</a>
+				<div class="hidden open"><img src="images/websites/TorontosOutdoorAdventuresHome.png" alt="HackerYou Project 2 - Home Page"></div></li>
+				<li><a href="#" class="readMore">HackerYou Project - Info Page</a>
+				<div class="hidden"><img src="images/websites/TorontosOutdoorAdventuresWater.png" alt="HackerYou Project 2 - Info Page"></div></li>
+				<li><a href="#" class="readMore">My website from September</a>
+				<div class="hidden"><img src="images/websites/ErikaDonovanSept2014.png" alt="My website in September 2014"></div></li>
+				<li><a href="#" class="readMore">My recent placeholder site</a>
+				<div class="hidden"><img src="images/websites/erikadonovanOct312014.png" alt="My website placeholder"></div></li>
 			</ul>
 		</div>
 	</div>
-
-	<div class="wrapper">
-		<div class="content"><h1>Hi! I'm Erika!</h1>
-			<p>Right now I am taking a wicked awesome class with <a href="http://www.hackeryou.com">HackerYou</a> (re)learning about HTML and CSS and will be launching a brand new site in the new year!</p>
-			<p>
-				Here is a (short) list of articles that feature a few of my photos:
-			</p><ul class="picsul">
-			<li><a href="https://theblueprint.com/features/dinner-nomiku/" target="_blank">The Blueprint Connects: A Dinner with Nomiku</a></li>
-			<li><a href="http://adminblog.invisionapp.com/from-agency-pro-to-start-up-newbie/" target="_blank">Invision App: From Agency Pro to Start-Up Newbie</a></li>
-			<li><a href="http://dankalmar.com/" target="_blank">The Official Website of Dan Kalmar</a></li>
-		</ul>
-		<!-- Begin MailChimp Signup Form -->
-		<div id="mc_embed_signup">
-			<form action="//erikadonovan.us9.list-manage.com/subscribe/post?u=fcbf907dcfe8026681e24560b&amp;id=3cfe43a184" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-				<div id="mc_embed_signup_scroll">
-					<h3>Sign up to be notified when I launch my new site!</h3>
-					<div class="mc-field-group">
-						<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="email address">
-					</div>
-					<div class="mc-field-group input-group">
-						<strong>What are you interested in? </strong>
-						<ul class="checkbox">
-							<li><input type="checkbox" value="1" name="group[12637][1]" id="mce-group[12637]-12637-0"><label for="mce-group[12637]-12637-0">Photographes</label></li>
-							<li><input type="checkbox" value="2" name="group[12637][2]" id="mce-group[12637]-12637-1"><label for="mce-group[12637]-12637-1">A website</label></li>
-							<li><input type="checkbox" value="4" name="group[12637][4]" id="mce-group[12637]-12637-2"><label for="mce-group[12637]-12637-2">Crochet items</label></li>
-						</ul>
-					</div>
-					<div id="mce-responses" class="clear">
-						<div class="response" id="mce-error-response" style="display:none"></div>
-						<div class="response" id="mce-success-response" style="display:none"></div>
-					</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-					<div style="position: absolute; left: -5000px;"><input type="text" name="b_fcbf907dcfe8026681e24560b_3cfe43a184" tabindex="-1" value=""></div>
-					<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-				</div>
-			</form>
+</div>
+	<!-- <div class="quotes-pink clearfix">
+		<div class="third-left">
+			<blockquote>I've hired Erika on a number of occasions, usually to help me deal with the disaster that is my various expense reports. She sorts and inputs the data from my receipts, separating them into different categories and providing summary totals. She is fast and accurate. - <em>Heather Payne, Founder, Ladies Learning Code & HackerYou</em></blockquote>
 		</div>
+		<div class="third-middle">
+			&nbsp;
+		</div>
+		<div class="third-right">
+			<blockquote>Erika is a life-saver and amazing to work with. I called her last minute to help me with through a ton of administrative minutia required to submit final grades for a course I was teaching. She responded immediately and end product was perfect. - <em>Shawn Konopinsky, Nascent</em></blockquote>
+		</div>
+	</div> -->
+	<!-- PHOTOGRPAHY -->
+	<div class="section clearfix photography" id="photography">
+		<div class="wrapper">
+			<h2>photography</h2>
+			<div class="left">
+			<h3>My first camera...</h3>
+				<p>I discovered photography in a Happy Meal. The lime green camera came with the meal (chicken nuggets...I believe) and it started my obsession with taking beautiful photos. I took photos of everything! My family, our pets, random stranger’s pets, trees… everything! Since my dad is a photographer, he passed down one of his older film cameras to me when I was 12 and taught me some tips and tricks. Now I focus on family portraits and sport photos. <span class="spannyspan">My first camera was in a Happy Meal and now photography is my Happy Place.</span></p>
+				<h3>Articles with My Photos!</h3>
+				<p>Here is a (short) list of articles that feature a few of my photos!</p>
+				<ul class="no-bullet-list">
+					<li><a href="https://theblueprint.com/features/dinner-nomiku/" title="A Dinner with Nomiku">The Blueprint Connects: A Dinner with Nomiku</a></li>
+					<li><a href="http://adminblog.invisionapp.com/from-agency-pro-to-start-up-newbie/" title="From Agency Pro to Start-Up Newbie">Invision App: From Agency Pro to Start-Up Newbie</a></li>
+					<li><a href="http://dankalmar.com/" title="The Official Website of Dan Kalmar">The Official Website of Dan Kalmar</a></li>
+				</ul>
+				<!-- <h3>Why Photos Matter</h3>
+				<ul class="bullet-list">
+					<li>point 1</li>
+					<li>point 2</li>
+					<li>point 3</li>
+				</ul> -->
+				<div class="connect">
+					<a href="mailto:hello@erikadonovan.com?subject=Photogrpahy" title="Let's Chat about a Photos for you!">Let's Chat about a Photos for you!</a>
+				</div>
 
-		<!--End mc_embed_signup-->
-		<p>If you need help with a project, ex. typing, travel expense, research, data management and input, or administrative type work, I work part time as a freelance admin consultant. Feel free to e-mail me with the information of your project and we can figure something out that works for both of us. I have done work for Heather Payne (Ladies Learning Code & HackerYou) and Shawn Konopinsky (Nascent). Let's chat!</p>
-		<blockquote>Erika is a miracle worker, and I'll say that to anyone. I've hired Erika on a number of occasions, usually to help me deal with the disaster that is my various expense reports. She sorts and inputs the data from my receipts, separating them into different categories and providing summary totals. She is fast and accurate. Hiring Erika is always a pleasure - it saves me time, and the job is always done right, the first time.</blockquote> <em>- Heather Payne, Founder of Ladies Learning Code & HackerYou</em>
-		<p>If you are in need of new photos, vitural support help, or have an event you think I should attend, feel free to email me <a href="mailto:hello@erikadonovan.com">here</a>!</p>
+			</div>
+			<div class="right photography">
+				<h3>Albums on Flickr</h3>
+				<div class="third-left">
+					<a href="https://www.flickr.com/photos/erikaruth/sets/72157649376487031/"><img class="pics" src="images/work.jpg" alt="2014 Portraits"><p>Portraits</p></a>
+					<a href="https://www.flickr.com/photos/erikaruth/sets/72157629539979640/"><img class="pics" src="images/dodgers.jpg" alt="Oshawa Dodgers Baseball Team"><p>Oshawa Dodgers Baseball Team</p></a>
+				</div>
+				<div class="third-middle">
+					<a href="https://www.flickr.com/photos/erikaruth/sets/72157649378321652/"><img class="pics" src="images/kids.jpg" alt="Kids Portraits"><p>Kids Portraits</p></a>
+					<a href="https://www.flickr.com/photos/erikaruth/sets/72157632467742221/"><img class="pics" src="images/grant.jpg" alt="A Year of Sky Photos"><p>Grant Brothers Boxing & MMA Club Event</p></a>
+				</div>
+				<div class="third-right">
+					<a href="https://www.flickr.com/photos/erikaruth/sets/72157647055187284/"><img class="pics" src="images/family.jpg" alt="Family Portraits"><p>Family Portraits</p></a>
+					<a href="https://www.flickr.com/photos/erikaruth/sets/72157628987681323/"><img class="pics" src="images/mandb.jpg" alt="Michelle and a horse names Beau"><p>Previous Portraits</p></a>
+				</div>
+			</div> 
+		</div>
 	</div>
-</div>
-<div class="footer">
+	<!-- <div class="quotes-teal clearfix">
+		<div class="third-left">
+			<blockquote>I've hired Erika on a number of occasions, usually to help me deal with the disaster that is my various expense reports. She sorts and inputs the data from my receipts, separating them into different categories and providing summary totals. She is fast and accurate. - <em>Heather Payne, Founder, Ladies Learning Code & HackerYou</em></blockquote>
+		</div>
+		<div class="third-middle">
+			&nbsp;
+		</div>
+		<div class="third-right">
+			<blockquote>Erika is a life-saver and amazing to work with. I called her last minute to help me with through a ton of administrative minutia required to submit final grades for a course I was teaching. She responded immediately and end product was perfect. - <em>Shawn Konopinsky, Nascent</em></blockquote>
+		</div>
+	</div> -->
+	<!-- OTHER STUFF -->
+	<!-- <div class="section otherstuff" id="otherstuff">
+		<div class="wrapper">
+			<h2>other stuff i do</h2>
+			<h3>Art Work</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas assumenda facere, eaque quam impedit sunt sapiente, alias vel omnis corporis, veritatis? Omnis illum odit sit commodi magnam voluptate, natus aliquam!</p>
+			<a href="https://www.flickr.com/photos/erikaruth/sets/72157646851620983/">Check out some of my work here</a>
+			<h3>Crochet</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas assumenda facere, eaque quam impedit sunt sapiente, alias vel omnis corporis, veritatis? Omnis illum odit sit commodi magnam voluptate, natus aliquam!</p>
+			<a href="">Check out some of my work here</a>
+		</div>
+	</div> -->
+	<!-- CONTACT -->
+	<div class="section contact clearfix">
+		<div class="wrapper">
+			<h2>Contact Me!</h2>
+			<div class="left">
+			<form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://erkdonovan.wufoo.com/forms/z13af36f1e03ztg/#public">
+  		<ul class="no-bullet-list">
+  			<li>
+				<input id="Field1" name="Field1" type="text" class="field text medium" value="" maxlength="255" tabindex="1" onkeyup="" placeholder="Name">
+			</li>
+			<li id="foli5">
+				<input id="Field5" name="Field5" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="2" placeholder="Email">
+			</li>
+			<li id="foli3">
+				<textarea id="Field3" name="Field3" class="field textarea medium" spellcheck="true" rows="10" cols="50" tabindex="3" onkeyup="" placeholder="Message"></textarea>
+			</li> 
+			<li class="buttons">
+				<input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Submit"/></div>
+			</li>
+			<li class="hide">
+			<label for="comment">Do Not Fill This Out</label>
+			<textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+			<input type="hidden" id="idstamp" name="idstamp" value="6DuDb7lKDE83LPFBhZxR1Uba5eVVNhqpDcm+Ky9Iolo=" />
+			</li>
+			</ul>
+			</form>
+			</div>
+			<div class="right">
 
-</div>
+			</div>
+		</div>
+	</div>
+	<!-- FOOTER -->
+	<div class="footer">
+		<p><i class="fa fa-copyright"></i> erika donovan</p>
+	</div>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+	<script>
+		$(function() {
+			$('a.readMore').click(function(e) {
+				e.preventDefault();
+				$('.open').slideToggle().removeClass('open');
+				$(this).next().slideToggle().toggleClass('open');
+			});
+		});
+	</script>
+
 </body>
 </html>
+

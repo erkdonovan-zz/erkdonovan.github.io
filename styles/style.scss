@@ -1,0 +1,394 @@
+// Write a note about the sass file 
+
+@import "normalize";
+@import "variables";
+@import "mixins";
+
+body {
+	font-family: $basicfont;
+	font-size: $basefontsize;
+}
+
+h1 {
+	@include fontstuffs(2.7);
+	@include nopadormar;
+	font-family: $headerfont;
+	text-align: center;
+}
+
+h2 {
+	@include fontstuffs(1.7);
+	text-transform: capitalize;
+}
+
+h3 {
+	@include fontstuffs(1.3);
+}
+
+.header h3 {
+	padding: 5px 0 40px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h4 {
+	@include fontstuffs(1.2);
+	@include nopadormar;
+	font-style: italic;
+	text-align: center;
+}
+h5 {
+	@include fontstuffs(1.1);
+}
+
+p {
+	@include fontstuffs();
+	line-height: 1.5;
+}
+
+a {
+	@include fontstuffs;
+	text-transform: capitalize;
+	text-decoration: none;
+	color: $firstcol;
+	font-weight: bold;
+	&:hover {
+	color: $secondcol;
+	text-decoration: underline;
+	}
+}
+
+.i {
+	color: black;
+	@include nopadormar;
+}
+
+// WRAPPER
+
+.wrapper {
+	max-width: 70%;
+	margin: 0 auto;
+}
+
+// HEADER
+
+.header {
+	width: 100%;
+	text-align: center;
+	background: #fff;
+	padding-bottom: 30px;
+	height: 100vh;
+	position: relative;
+	
+	& img {
+	width: 400px;
+	}
+}
+
+.wrapperheader {
+	@include centercenter;
+}
+
+.lightblub {
+	color: yellow;
+    font-size: 50px;
+    font-weight: bold;
+	position: absolute;
+	top: 10px;
+	left: 42%;
+	z-index: 2;
+	-webkit-transform: rotate(45deg);
+	-webkit-animation: flash 5s linear infinite;
+}
+
+@-webkit-keyframes flash {
+	20%, 60% {
+		opacity: 1
+	}
+
+	0%, 19%, 24%, 59%, 65%, 100% {
+		opacity: 0;
+	}
+}
+
+.social {
+	list-style-type: none;
+	@include nopadormar;
+	
+	li {
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+
+		a {
+		color: black;
+		@include basicpadding;
+			&:hover {
+		color: $firstcol;
+		text-decoration: none;
+			}
+		}
+	}
+}
+
+.bottom-arrow {
+	margin: 0 auto;
+	color: #000;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	text-align: center;
+
+	p {
+		@include fontstuffs(2);
+		text-align: center;
+		font-weight: bold;
+		@include nopadormar;
+	}
+}
+
+// GENERAL
+
+.webhidden {
+	display: none;
+}
+
+.left, .right {
+	float: left;
+	width: 50%;
+	padding: 5px 20px;
+}
+
+.spannyspan {
+	color: $thirdcol;
+	@include fontstuffs(1.1);
+	font-weight: bold;
+	font-style: italic;
+}
+
+// SECTIONS
+
+.section {
+	padding: 60px 0;
+	&:nth-child(even) {
+		background: $section2;
+	}
+	&:nth-child(odd) {
+		background: $section1;
+	}
+}
+
+.third-left, .third-middle, .third-right {
+	width: 33.33%;
+	float: left;
+}
+
+.quotes-pink {
+	background: $secondcol;
+	text-align: center;
+}
+
+.quotes-teal {
+	background: $firstcol;
+	text-align: center;
+}
+
+
+
+blockquote {
+	color: #fff;
+	padding: 20px 10px;
+	&::before {
+	content: '“' ;
+	display: block;
+	font-size: 40px;
+	}
+}
+
+// ABOUT
+
+.about {
+	margin: 0 auto;
+}
+
+.aboutme {
+	text-align: center;
+	h2, h4, h5 {
+		@include nopadormar;
+		text-align: center;
+		padding: 5px 0;
+	}
+	
+	img {
+		width: 300px;
+		border: $secondcol 2px solid;
+		padding: 5px;
+		text-align: right;
+	}
+}
+
+.aboutimg, .abouttext {
+	float: left;
+	display: inline-block;
+}
+
+.aboutimg {
+	width: 30%;
+}
+
+.abouttext {
+	width: 70%;
+	padding: 30px 0 0;
+
+}
+
+.skills {
+	padding: 20px;
+	i {
+		text-align: center;
+	}
+}
+
+h5 ~ p {
+	text-transform: capitalize;
+	@include nopadormar;
+	text-align: center;
+}
+
+.skills-box {
+	width: 20%;
+	display: inline-block;
+}
+
+// PHOTOS OF ME
+
+.photos-me {
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	padding: 15px 0;
+	background: $firstcol;
+}
+
+.photos-me-box {
+	width: 200px;
+	display: inline-block;
+	margin: 10px;
+	padding: 5px;
+	background: $firstcol;
+	
+	&, * {
+	text-align: center;
+	text-transform: uppercase;
+	}
+
+	img {
+		width: 100%;
+	}
+
+	p {
+	color: #fff;
+	@include nopadormar;
+	font-size: 14px;
+	}
+
+}
+
+// WEB DEV
+
+.webdev {
+	margin: 0 auto;
+	
+	img {
+	height: 400px;
+	margin: 5px;
+	}
+}
+
+.right ul {
+	list-style-type: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.hidden.open {
+	display: block;
+}
+
+// PHOTOGRAPHY
+
+.photography {
+	img {
+	width: 100px;
+	margin: 2px;
+		&:hover {
+		background: rgba(247, 103, 92, 0.6);
+			}
+	}
+
+	li {
+		a {
+			display: inline-block;
+			margin-top: 0;
+			}
+		}
+}
+
+.no-bullet-list {
+	list-style-type: none;
+}
+
+.bullet-list {
+	list-style-type: square;
+}
+
+.flickr-photo1 {
+	background-image: url(images/work.jpg);
+	background-width: 100%;
+	background-position: center center;
+}
+
+// CONTACT
+
+.form {
+	display: inline;
+}
+
+input,textarea {
+	display: block;
+	padding: 5px;
+	margin: 5px;
+	font-size: 14px;
+	width: 400px;
+	border: $firstcol 2px solid;
+	background: #fff;
+}
+
+input[type=submit] {
+	background: #fff;
+	width: 100px;
+	box-shadow: 0;
+	display: inline;
+}
+
+.hide {
+	display: none;
+}
+
+// FOOTER
+
+.footer {
+	width: 100%;
+	text-align: center;
+	background: $secondcol;
+	padding: 15px 0;
+
+	p {
+		font-size: 12px;
+		margin: 0;
+		text-align: center;
+	}
+}

@@ -1,0 +1,63 @@
+/* Portrait tablet and small desktops */
+@media (max-width: 960px) {
+	.weblinks, .social, .left, .right {
+		width: 100%;
+	}
+
+	.social {
+		text-align: left;
+	}
+
+	.left, .right {
+		margin: 10px;
+	}
+}
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	.nav li {
+		width: 50%;
+		display: inline;
+		margin: 0 auto;
+	}
+
+	.nav a {
+		padding: 10px 10px;
+	}
+ 	
+	.sociallinks li {
+		display: inline;
+		padding: 10px 20px;
+		text-align: center;
+	}
+
+	.nav a {
+		font-size: 24px;
+	}
+
+	.header {
+		padding-top: 100px;
+		background: $firstcol;
+	}
+
+	.section {
+		padding-top: 125px;
+	}
+
+	.webhidden {
+		display: block;
+	}
+
+	.webdev img {
+		height: 200px;
+	}
+
+	.mobilehidden {
+		display: none;
+	}
+}

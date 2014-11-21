@@ -1,0 +1,21 @@
+@mixin fontstuffs($realfontsize: 1) {
+	font-family: $basicfont;
+	font-size: $basefontsize * $realfontsize;
+	text-align: left;
+}
+
+@mixin nopadormar {
+	padding: 0;
+	margin: 0;
+}
+
+@mixin basicpadding {
+	padding: 10px 10px
+}
+
+@mixin centercenter {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
