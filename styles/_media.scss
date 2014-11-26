@@ -1,11 +1,21 @@
-/* Portrait tablet and small desktops */
+// Portrait tablet and small desktops
 @media (max-width: 960px) {
-	.weblinks, .social, .left, .right {
+	.header {
+		height: 60vh;
+	}
+
+	.aboutme {
+		img {
+			width: 200px;
+		}
+	}
+
+	.weblinks, .social, .left, .right, .aboutimg, .abouttext {
 		width: 100%;
 	}
 
-	.social {
-		text-align: left;
+	.wrapper {
+		width: 80%;
 	}
 
 	.left, .right {
@@ -13,51 +23,39 @@
 	}
 }
  
-/* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
+// Landscape phone to portrait tablet
+// @media (max-width: 768px) {
 
-}
+// }
  
-/* Landscape phones and down */
+// Landscape phones and down
 @media (max-width: 480px) {
-	.nav li {
-		width: 50%;
-		display: inline;
-		margin: 0 auto;
-	}
-
-	.nav a {
-		padding: 10px 10px;
-	}
- 	
-	.sociallinks li {
-		display: inline;
-		padding: 10px 20px;
-		text-align: center;
-	}
-
-	.nav a {
-		font-size: 24px;
-	}
-
-	.header {
-		padding-top: 100px;
-		background: $firstcol;
-	}
-
-	.section {
-		padding-top: 125px;
-	}
-
-	.webhidden {
-		display: block;
-	}
-
 	.webdev img {
 		height: 200px;
 	}
 
+	.skills {
+		display: block;
+		li {
+			width: 100%;
+		}
+		padding-top: 5px;
+	}
+
+	.no-bullet-list, .bullet-list, .right ul {
+		@include nopadormar;
+	}
+
 	.mobilehidden {
 		display: none;
+	}
+
+	.desktophidden {
+		display: block;
+	}
+
+	input,textarea {
+	padding: 5px 0;
+	width: 300px;
 	}
 }

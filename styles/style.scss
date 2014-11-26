@@ -63,10 +63,22 @@ a {
 	@include nopadormar;
 }
 
+.desktophidden {
+	display: none;
+}
+
+.no-bullet-list {
+	list-style-type: none;
+}
+
+.bullet-list {
+	list-style-type: square;
+}
+
 // WRAPPER
 
 .wrapper {
-	max-width: 70%;
+	max-width: 80%;
 	margin: 0 auto;
 }
 
@@ -124,8 +136,8 @@ a {
 		color: black;
 		@include basicpadding;
 			&:hover {
-		color: $firstcol;
-		text-decoration: none;
+				color: $firstcol;
+				text-decoration: none;
 			}
 		}
 	}
@@ -194,8 +206,6 @@ a {
 	text-align: center;
 }
 
-
-
 blockquote {
 	color: #fff;
 	padding: 20px 10px;
@@ -228,25 +238,30 @@ blockquote {
 	}
 }
 
-.aboutimg, .abouttext {
+.aboutimg {
 	float: left;
 	display: inline-block;
-}
-
-.aboutimg {
 	width: 30%;
 }
 
 .abouttext {
-	width: 70%;
+	float: right;
+	display: inline-block;
+	width: 50%;
 	padding: 30px 0 0;
 
 }
 
 .skills {
-	padding: 20px;
+	@include nopadormar;
 	i {
 		text-align: center;
+
+	}
+	li {
+		display: inline-block;
+		width: 20%;
+		vertical-align: top;
 	}
 }
 
@@ -256,10 +271,6 @@ h5 ~ p {
 	text-align: center;
 }
 
-.skills-box {
-	width: 20%;
-	display: inline-block;
-}
 
 // PHOTOS OF ME
 
@@ -334,15 +345,6 @@ h5 ~ p {
 			margin-top: 0;
 			}
 		}
-}
-
-.no-bullet-list {
-	list-style-type: none;
-	padding: 0;
-}
-
-.bullet-list {
-	list-style-type: square;
 }
 
 .flickr-photo1 {
