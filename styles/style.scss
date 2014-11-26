@@ -338,6 +338,7 @@ h5 ~ p {
 
 .no-bullet-list {
 	list-style-type: none;
+	padding: 0;
 }
 
 .bullet-list {
@@ -393,4 +394,4 @@ input[type=submit] {
 }
 
 
-@import '_media';
+@import "media";
