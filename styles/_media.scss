@@ -11,7 +11,7 @@
 	}
 
 	.weblinks, .social, .left, .right, .aboutimg, .abouttext {
-		width: 100%;
+		@include column(12);
 	}
 
 	.wrapper {
@@ -30,8 +30,12 @@
  
 // Landscape phones and down
 @media (max-width: 480px) {
+	.header img {
+		width: 300px;
+	}
+
 	.webdev img {
-		height: 200px;
+		width: 200px;
 	}
 
 	.skills {
