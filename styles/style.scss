@@ -242,7 +242,7 @@ blockquote {
 	margin: 0 auto;
 }
 
-.aboutme {
+.aboutimg {
 	@include column(3);
 	@include push(1);
 	text-align: center;
@@ -251,8 +251,7 @@ blockquote {
 		width: 250px;
 		border: $secondcol 2px solid;
 		padding: 5px;
-		text-align: right;
-		vertical-align: center;
+		text-align: center;
 	}
 }
 

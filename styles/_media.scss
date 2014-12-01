@@ -4,12 +4,6 @@
 		height: 60vh;
 	}
 
-	.aboutme {
-		img {
-			width: 200px;
-		}
-	}
-
 	.weblinks, .social, .left, .right, .aboutimg, .abouttext {
 		@include column(12);
 	}
@@ -21,12 +15,16 @@
 	.left, .right {
 		margin: 10px;
 	}
+
+	.bottom-arrow {
+		display: none;
+	}
 }
  
 // Landscape phone to portrait tablet
-// @media (max-width: 768px) {
+@media (max-width: 768px) {
 
-// }
+}
  
 // Landscape phones and down
 @media (max-width: 480px) {
