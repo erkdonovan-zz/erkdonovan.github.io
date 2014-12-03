@@ -201,17 +201,13 @@ a {
 }
 
 blockquote {
+	padding: 60px 0 0;
 	color: #000;
-	padding: 0;
-	&::before {
-	content: '“' ;
-	color: $firstcol;
-	text-align: center;
-	font-size: 64px;
-	position: relative;
-	top: 20px;
-	}
 }
+
+i.blockquote {
+	color: $firstcol;
+	}
 
 // NAV 
 
