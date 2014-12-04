@@ -10,3 +10,19 @@ $basicfont: 'Source Sans Pro','verdana','sans-serif';
 $headerfont: 'Kaushan Script', cursive;
 
 $basefontsize: 16px;
+
+// Grays
+$black: #000;
+$darkerGray: #222;
+$darkGray: #333;
+$gray: #666;
+$lightGray: #eee;
+$white: #fff;
+
+
+// Mobile breakpoints
+@mixin mobile {
+  @media screen and (max-width: 640px) {
+    @content;
+  }
+}
