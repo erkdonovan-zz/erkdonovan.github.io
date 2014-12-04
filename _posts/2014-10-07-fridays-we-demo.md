@@ -3,6 +3,8 @@ layout: post
 title: On Friday’s We Demo
 ---
 
+<img src="../images/blog-images/me-demoing.jpeg">
+
 Last week we were given our first HackerYou class projects. I jumped at the idea of coding my very own one page website from scratch! Which I haven’t done in over 10 years. On Friday afternoon we had a work demo. Three of us had side projects we were working on that we wanted to share, and I showed them what I had made.
 
 <em>Well two of us did and one just wanted to demo how to use a beer funnel.</em>

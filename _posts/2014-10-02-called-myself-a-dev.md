@@ -3,8 +3,7 @@ layout: post
 title: Yesterday I called myself a Dev!
 ---
 
-
-## Tonight completes the fourth week of my part-time coding program with HackerYou on Web Development
+###Tonight completes the fourth week of my part-time coding program with HackerYou on Web Development
 
 I first learned what HTML was in grade 10 when I wanted to see how websites where built. So one day I got a book on it and I started building very basic, poorly designed, frame based websites for my friend’s sport teams and fan pages for celebrities I was a fan of.
 
