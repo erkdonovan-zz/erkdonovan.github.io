@@ -431,11 +431,12 @@ input[type=submit] {
 
 // BLOG STUFF
 
-.blog {
-	h2 {
-		@include fontstuffs(1.7);
+.blog h2 {
+	@include fontstuffs(1.7);
 		text-transform: capitalize;
-	}
+}
+
+.blog h3 {
 	h3 {
 		@include fontstuffs(1.3);
 		text-align: center;

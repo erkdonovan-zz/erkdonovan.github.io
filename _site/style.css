@@ -946,7 +946,8 @@ input[type=submit] {
   text-align: left;
   text-transform: capitalize;
 }
-.blog h3 {
+
+.blog h3 h3 {
   font-family: "Source Sans Pro", "verdana", "sans-serif";
   font-size: 20.8px;
   text-align: left;
