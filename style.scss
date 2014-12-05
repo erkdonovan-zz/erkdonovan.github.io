@@ -1,27 +1,13 @@
 ---
 ---
 
-//
-// IMPORTS
-//
-
 @import "_reset";
 @import "_variables";
 @import "_mixins";
 @import "_normalize";
 @import "_grid";
-// Syntax highlighting @import is at the bottom of this file
 
-/**************/
-/* BASE RULES */
-/**************/
-
-// Write a note about the sass file 
-
-@import "normalize";
-@import "variables";
-@import "mixins";
-@import "grid";
+// BASIC
 
 body {
 	font-family: $basicfont;
@@ -30,8 +16,9 @@ body {
 
 .container {
   margin: 0 auto;
+  max-width: 800px;
   padding: 0 10px;
-  width: 70%;
+  width: 100%;
 }
 
 h1 {
@@ -166,6 +153,7 @@ a {
 
 .bottom-arrow {
 	margin: 0 auto;
+	padding: 0 0 50px;
 	color: #000;
 	position: absolute;
 	bottom: 0;
@@ -235,14 +223,14 @@ i.blockquote {
 
 // NAV 
 
-.nav {
+.nav, .nav-blog {
 	width: 100%;
 	background: $secondcol;
-
 	ul {
+		margin: 0;
 		li {
 			display: inline-block;
-			padding: 20px 0;
+			padding: 30px 0;
 			a {
 				padding: 20px;
 				color: #000;
@@ -257,31 +245,14 @@ i.blockquote {
 }
 
 .nav-blog {
-	width: 100%;
-	background: $secondcol;
 	position: fixed;
-
-	ul {
-		li {
-			display: inline-block;
-			padding: 20px 0;
-			a {
-				padding: 20px;
-				color: #000;
-				text-transform: uppercase;
-				&:hover {
-					color: $thirdcol;
-					text-decoration: none;
-				}
-			}
-		}
-	}
 }
 
 // ABOUT
 
 .about {
 	margin: 0 auto;
+	padding: 100px 0 75px;
 }
 
 .aboutimg {
@@ -465,9 +436,14 @@ ul ul, ol ul {
 	list-style-type: square;
 }
 
+.standout {
+	font-weight: bold;
+	text-align: center;
+	color: $thirdcol;
+}
+
 em {
 	font-style: italic;
-	text-align: center;
 }
 
 strong {
@@ -565,11 +541,13 @@ img {
 	h2 {
 	@include fontstuffs(1.3);
 	text-align: left;	
+	color: $lightGray;
 	}
 
 	h3 {
 	@include fontstuffs(1);
-	text-align: left;	
+	text-align: left;
+	color: $lightGray;	
 	}
 
 }
