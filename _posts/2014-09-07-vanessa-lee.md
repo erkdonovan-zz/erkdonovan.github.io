@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Photos - Vanessa Lee
+title: Vanessa Lee
 categories:
 - Photography
 ---
