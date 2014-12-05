@@ -1,0 +1,156 @@
+/* The Mobile CSS file */
+
+@font-face {
+	font-family: 'thirsty_softmedium';
+	src: url('../files/thirstysoftmedium-webfont.eot');
+	src: url('../files/thirstysoftmedium-webfont.eot?#iefix') format('embedded-opentype'),
+	url('../files/thirstysoftmedium-webfont.woff') format('woff'),
+	url('../files/thirstysoftmedium-webfont.ttf') format('truetype'),
+	url('../files/thirstysoftmedium-webfont.svg#thirsty_softmedium') format('svg');
+	font-weight: normal;
+	font-style: normal;
+
+}
+body,form,input,button,select,textarea {
+	font-size: 100%;
+	margin: 0;
+}  
+
+* {
+	box-sizing: border-box;
+}
+
+h1 {
+	font-size: 24px;
+	font-family: 'thirsty_softmedium','Georgia','serif';
+}
+h2 {
+	font-size: 20px;
+	color: #30004C;
+	font-family: 'thirsty_softmedium','Georgia','serif';
+	text-align: center;
+}
+h3 {
+	font-size: 16px;
+	font-family: 'Source Sans Pro','verdana','sans-serif';
+	text-align: center;
+}
+p {
+	line-height: 1.4;
+	font-size: 14px;
+	font-family: 'Source Sans Pro','verdana','sans-serif';
+}3
+a {
+	text-decoration: none;
+	color: #000000;
+	font-size: 12pt;
+	font-family: 'Source Sans Pro','verdana','sans-serif';
+}
+a:hover {
+	color: #BF5FFF;
+}
+.para {
+	text-align: left;
+}
+.photos p {
+	margin: 0;
+}
+
+/*menu styles */
+
+.menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	border-bottom: 5px solid #30004C;
+	background: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+}
+.menu li {
+	display: inline-block;
+	padding: 5px 5px;
+}
+.menu a {
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 12pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: 'Source Sans Pro','verdana','sans-serif';
+}
+.menu a:hover {
+	color: #BF5FFF;
+}
+
+/*banner styles */
+
+div.banner {
+	padding-top: 70px;
+	padding-bottom: 25px;
+	background: #30004C;
+	background-attachment: fixed;
+	color: #ffffff;
+	text-align: center;
+	border-bottom: 5px solid #30004C;
+}
+
+.box {
+	padding: 30px 40px 30px 40px;
+	background: white;
+	border-bottom: 5px solid #30004C;
+}
+
+.box h3 {
+	text-align: left;
+	text-decoration: underline;
+}
+
+.contact {
+	text-align: center;
+}
+
+/*image styles*/ 
+
+img.profile {
+	border: 1px solid #30004C;
+	width: 200px;
+	height: 200px;
+	padding: 5px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+}
+img.icon {
+	width: 50px;
+	height: 50px;
+}
+img.project, img.pics {
+  width: 200px;
+  height: 200px;
+  display: block;
+}
+
+/*photo link styles*/
+
+.picsul a {
+	list-style-type: square;
+	margin-left: 12px;
+	display: inline-block;
+	font-weight: bold;
+	font-family: 'Source Sans Pro','verdana','sans-serif';
+	text-decoration: none;
+	color: black;
+}
+.picsul a:hover {
+	text-decoration: underline;
+	color: #30004C;
+}
+
+.desktop-only {
+  display: none;
+}
