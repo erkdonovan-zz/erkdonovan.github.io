@@ -202,25 +202,6 @@ a {
 	@include column(4);
 }
 
-.quotes-pink {
-	background: $secondcol;
-	text-align: center;
-}
-
-.quotes-teal {
-	background: $firstcol;
-	text-align: center;
-}
-
-blockquote {
-	padding: 60px 0 0;
-	color: #000;
-}
-
-i.blockquote {
-	color: $firstcol;
-	}
-
 // NAV 
 
 .nav, .nav-blog {
@@ -346,6 +327,31 @@ h5 ~ p {
 
 .flickr {
 	@include column(4);
+}
+
+// BOTTOM - QUOTES AND SOCIAL
+
+.bottom-links {
+	margin: 50px;
+}
+
+.quotes-pink {
+	background: $secondcol;
+	text-align: center;
+}
+
+.quotes-teal {
+	background: $firstcol;
+	text-align: center;
+}
+
+blockquote {
+	padding: 60px 0 0;
+	color: #000;
+}
+
+i.blockquote {
+	color: $firstcol;
 }
 
 // CONTACT
@@ -547,7 +553,7 @@ img {
 	h3 {
 	@include fontstuffs(1);
 	text-align: left;
-	color: $lightGray;	
+	color: $darkGray;	
 	}
 
 }
