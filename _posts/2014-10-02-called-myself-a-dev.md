@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Yesterday I called myself a Dev!
+categories: 
+- Web Development
 ---
 
 ###Tonight completes the fourth week of my part-time coding program with HackerYou on Web Development

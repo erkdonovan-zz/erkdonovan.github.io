@@ -1,6 +1,8 @@
 ---
 layout: post
 title: On Friday’s We Demo
+categories: 
+- Web Development
 ---
 
 <img src="../images/blog-images/me-demoing.jpeg">

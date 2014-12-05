@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Photos - Vanessa Lee
-categories : [Photography]
+categories:
+- Photography
 ---
 
 Last week, in the back alley behind my office building I took a few headshots of Vanessa Lee, Co-Founder of Canvas Labs.
