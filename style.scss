@@ -95,13 +95,13 @@ a {
 	position: relative;
 	
 	& img {
-	width: 400px;
+		width: 400px;
 	}
 
 	h3 {
-	padding: 5px 0 40px;
-	text-transform: uppercase;
-	text-align: center;
+		padding: 5px 0 40px;
+		text-transform: uppercase;
+		text-align: center;
 	}
 }
 
@@ -175,7 +175,7 @@ a {
 	display: none;
 }
 
-.spannyspan {
+.standout {
 	color: $thirdcol;
 	@include fontstuffs(1.1);
 	font-weight: bold;
@@ -383,10 +383,6 @@ input[type=submit] {
 	display: inline;
 }
 
-.hide {
-	display: none;
-}
-
 // FOOTER
 
 .footer {
@@ -429,25 +425,6 @@ ul ul, ol ul {
 	list-style-type: circle;
 }
 
-.i {
-	color: black;
-	@include nopadormar;
-}
-
-.no-bullet-list {
-	list-style-type: none;
-}
-
-.bullet-list {
-	list-style-type: square;
-}
-
-.standout {
-	font-weight: bold;
-	text-align: center;
-	color: $thirdcol;
-}
-
 em {
 	font-style: italic;
 }
@@ -465,16 +442,6 @@ img {
 	color: $gray;
 	margin: 10px;
 }
-
-
-// Nicolas Gallagher's micro clearfix hack
-// http://nicolasgallagher.com/micro-clearfix-hack/
-.clearfix:before,
-.clearfix:after {
-	content: " ";
-	display: table;
-}
-
 
 /*********************/
 /* LAYOUT / SECTIONS */
