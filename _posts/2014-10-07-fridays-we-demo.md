@@ -7,7 +7,7 @@ title: On Friday’s We Demo
 
 Last week we were given our first HackerYou class projects. I jumped at the idea of coding my very own one page website from scratch! Which I haven’t done in over 10 years. On Friday afternoon we had a work demo. Three of us had side projects we were working on that we wanted to share, and I showed them what I had made.
 
-<em>Well two of us did and one just wanted to demo how to use a beer funnel.</em>
+<span class="standout">Well two of us did and one just wanted to demo how to use a beer funnel.</span>
 
 So I put my newly designed (following the list of items we needed to include) website up on the big screen for my co-workers, above, and then talked about it, showing what different things were and what I had learned in the first few weeks. I think they were impressed with it… or they are just really nice people that don’t want to put me down?
 
