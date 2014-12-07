@@ -1,0 +1,815 @@
+@mixin falling ($postion, $time, $size, $delay: 0) {
+	left: $postion;
+	-webkit-animation: snowfall $time ease-in infinite;
+	font-size: $size;
+	-webkit-animation-delay: $delay;
+}
+
+body {
+	background: #000;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.nav {
+	img {
+		width: 150px;
+		padding: 10px;
+	}
+}
+
+.precard {
+	background: #000;
+	width: 100%;
+	position: relative;
+	height: 94vh;
+}
+
+.card {
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	height: 94vh;
+	overflow: hidden;
+	background: #000;
+}
+
+.audio-player {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+}
+
+#audio-player {
+	background-image: url('images/audio-on.png');
+	background-size: 75px 75px;
+	display: block;
+	width: 75px;
+	height: 75px;
+	&.player-play {
+		background-image: url('images/audio-off.png');
+	}
+}
+
+.front, ul.back {
+	width: 100%;
+	height: 94vh;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position: top center;
+    position: absolute;
+    transition: all 2s linear;
+}
+
+.front {
+	background-image: url('images/card-cover-@2x.jpg');
+	background-repeat: no-repeat;
+    left: 0;
+}
+
+ul.back {
+	background-image: url('images/card-inside-@2x.jpg');
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	right: -100%;
+}
+
+input#toggle {
+	display: none;
+}
+
+input#toggle:checked + ul.back { 
+	right: 0;
+}
+
+input#toggle:checked ~ .front {
+	left: -100%
+}
+
+label[for="toggle"] {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+}
+
+.inside, .outside {
+	background-size: 75px;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	width: 75px;
+	height: 75px;
+}
+
+.inside {
+	display: block;
+	background-image: url('images/button-nor.png');
+	&:hover {
+	background-image: url('images/button-rollover.png');
+	}
+}
+
+.outside {
+	display: none;
+	background-image: url('images/button-back-nor.png');
+	&:hover {
+	background-image: url('images/button-back-rollover.png');
+	}
+}
+
+input#toggle:checked ~ .front label .inside {
+	display: none;
+}
+
+input#toggle:checked ~ .front label .outside {
+	display: block;
+}
+
+.snow {
+	position: absolute;
+	color: #fff;
+}
+
+.snow01 {
+	@include falling (1%, 15s, 10px, 0.3s);
+}
+.snow02 {
+	@include falling (2%, 8s, 19px);
+}
+.snow03 {
+	@include falling (3%, 10s, 10px, 0.5s);
+}
+.snow04 {
+	@include falling (4%, 9s, 15px, 0.3s);
+}
+
+.snow1 {
+	@include falling (5%, 12s, 8px);
+}
+.snow11 {
+	@include falling (6%, 22s, 19px, 0.5s);
+}
+.snow12 {
+	@include falling (7%, 9s, 8px);
+}
+.snow13 {
+	@include falling (8%, 14s, 12px);
+}
+.snow14 {
+	@include falling (9%, 10s, 15px, 0.3s);
+}
+
+.snow2 {
+	@include falling (10%, 22s, 8px);
+}
+.snow21 {
+	@include falling (11%, 12s, 16px, 0.5s);
+}
+.snow22 {
+	@include falling (12%, 15s, 16px);
+}
+.snow23 {
+	@include falling (13%, 20s, 10px, 0.5s);
+}
+.snow24 {
+	@include falling (14%, 12s, 16px);
+}
+
+.snow3 {
+	@include falling (15%, 9s, 11px);
+}
+.snow31 {
+	@include falling (16%, 12s, 10px, 0.3s);
+}
+.snow32 {
+	@include falling (17%, 15s, 16px, 0.5s);
+}
+.snow33 {
+	@include falling (18%, 22s, 19px);
+}
+.snow34 {
+	@include falling (19%, 20s, 10px, 0.5s);
+}
+
+.snow4 {
+	@include falling (20%, 12s, 10px);
+}
+.snow41 {
+	@include falling (21%, 22s, 10px, 0.3s);
+}
+.snow42 {
+	@include falling (22%, 15s, 19px);
+}
+.snow43 {
+	@include falling (23%, 10s, 8px);
+}
+.snow44 {
+	@include falling (24%, 22s, 16px, 0.5s);
+}
+
+.snow5 {
+	@include falling (25%, 8s, 16px, 0.3s);
+}
+.snow51 {
+	@include falling (26%, 22s, 8px);
+}
+.snow52 {
+	@include falling (27%, 15s, 16px);
+}
+.snow53 {
+	@include falling (28%, 20s, 12px);
+}
+.snow54 {
+	@include falling (29%, 12s, 19px, 0.3s);
+}
+
+.snow6 {
+	@include falling (30%, 9s, 16px);
+}
+.snow61 {
+	@include falling (31%, 12s, 15px, 0.5s);
+}
+.snow62 {
+	@include falling (32%, 20s, 14px, 0.3s);
+}
+.snow63 {
+	@include falling (33%, 10s, 15px, 0.5s);
+}
+.snow64 {
+	@include falling (34%, 8s, 14px);
+}
+
+.snow7 {
+	@include falling (35%, 22s, 8px);
+}
+.snow71 {
+	@include falling (36%, 9s, 10px, 0.5s);
+}
+.snow72 {
+	@include falling (37%, 8s, 19px);
+}
+.snow73 {
+	@include falling (38%, 20s, 12px, 0.5s);
+}
+.snow74 {
+	@include falling (39%, 18s, 19px, 0.3s);
+}
+
+.snow8	{
+	@include falling (40%, 22s, 10px);
+}
+.snow81	{
+	@include falling (41%, 9s, 19px, 0.5s);
+}
+.snow82	{
+	@include falling (42%, 22s, 11px);
+}
+.snow83	{
+	@include falling (43%, 26s, 8px, 0.3s);
+}
+.snow84	{
+	@include falling (44%, 12s, 12px);
+}
+
+.snow9	{
+	@include falling (45%, 14s, 19px);
+}
+.snow91	{
+	@include falling (46%, 10s, 17px, 0.5s);
+}
+.snow92	{
+	@include falling (47%, 15s, 17px);
+}
+.snow93	{
+	@include falling (48%, 10s, 19px, 0.3s);
+}
+.snow94	{
+	@include falling (49%, 22s, 17px);
+}
+
+.snow100 {
+	@include falling (50%, 9s, 16px);
+}
+.snow101 {
+	@include falling (51%, 20s, 16px);
+}
+.snow102 {
+	@include falling (52%, 12s, 19px, 0.3s);
+}
+.snow103 {
+	@include falling (53%, 20s, 16px);
+}
+.snow104 {
+	@include falling (54%, 12s, 15px);
+}
+
+.snow110 {
+	@include falling (55%, 17s, 17px, 0.3s);
+}
+.snow111 {
+	@include falling (56%, 14s, 14px, 0.5s);
+}
+.snow112 {
+	@include falling (57%, 9s, 19px);
+}
+.snow113 {
+	@include falling (58%, 11s, 17px);
+}
+.snow114 {
+	@include falling (59%, 10s, 14px, 0.3s);
+}
+
+.snow120 {
+	@include falling (60%, 12s, 10px);
+}
+.snow121 {
+	@include falling (61%, 14s, 19px);
+}
+.snow122 {
+	@include falling (62%, 8s, 10px, 0.5s);
+}
+.snow123 {
+	@include falling (63%, 20s, 12px);
+}
+.snow124 {
+	@include falling (64%, 18s, 10px);
+}
+
+.snow130 {
+	@include falling (65%, 22s, 19px, 0.3s);
+}
+.snow131 {
+	@include falling (66%, 18s, 14px, 0.5s);
+}
+.snow132 {
+	@include falling (67%, 15s, 15px);
+}
+.snow133 {
+	@include falling (68%, 9s, 19px, 0.5s);
+}
+.snow134 {
+	@include falling (69%, 19s, 8px, 0.3s);
+}
+
+.snow140 {
+	@include falling (70%, 13s, 14px);
+}
+.snow141 {
+	@include falling (71%, 18s, 14px);
+}
+.snow142 {
+	@include falling (72%, 12s, 14px, 0.5s);
+}
+.snow143 {
+	@include falling (73%, 19s, 14px, 0.3s);
+}
+.snow144 {
+	@include falling (74%, 16s, 19px);
+}
+
+.snow150 {
+	@include falling (75%, 16s, 15px);
+}
+.snow151 {
+	@include falling (76%, 18s, 14px);
+}
+.snow152 {
+	@include falling (77%, 13s, 16px, 0.3s);
+}
+.snow153 {
+	@include falling (78%, 10s, 17px);
+}
+.snow154 {
+	@include falling (79%, 19s, 15px, 0.5s);
+}
+
+
+.snow160 {
+	@include falling (80%, 10s, 17px);
+}
+.snow161 {
+	@include falling (81%, 16s, 19px, 0.3s);
+}
+.snow162 {
+	@include falling (82%, 11s, 19px);
+}
+.snow163 {
+	@include falling (83%, 17s, 17px);
+}
+.snow164 {
+	@include falling (84%, 14s, 19px, 0.5s);
+}
+
+
+.snow170 {
+	@include falling (85%, 18s, 16px, 0.5s);
+}
+.snow171 {
+	@include falling (86%, 15s, 14px);
+}
+.snow172 {
+	@include falling (87%, 8s, 16px);
+}
+.snow173 {
+	@include falling (88%, 10s, 19px, 0.3s);
+}
+.snow174 {
+	@include falling (89%, 19s, 14px);
+}
+
+.snow180 {
+	@include falling (90%, 8s, 15px, 0.3s);
+}
+.snow181 {
+	@include falling (91%, 16s, 15px);
+}
+.snow182 {
+	@include falling (92%, 10s, 16px, 0.5s);
+}
+.snow183 {
+	@include falling (93%, 13s, 15px);
+}
+.snow184 {
+	@include falling (94%, 8s, 19px, 0.3s);
+}
+
+
+.snow190 {
+	@include falling (95%, 12s, 17px, 0.5s);
+}
+.snow191 {
+	@include falling (96%, 23s, 16px);
+}
+.snow192 {
+	@include falling (97%, 15s, 10px, 0.5s);
+}
+.snow193 {
+	@include falling (98%, 18s, 17px);
+}
+.snow194 {
+	@include falling (99%, 19s, 19px, 0.3s);
+}
+
+@-webkit-keyframes snowfall {
+	0% {
+		top: -25px;
+	}
+
+	100% {
+		top: 99%;
+	}
+}
+
+.confetti {
+	position: absolute;
+	color: gold;
+}
+
+.confetti01 {
+	@include falling (1%, 15s, 10px, 0.3s);
+}
+.confetti02 {
+	@include falling (2%, 8s, 19px);
+}
+.confetti03 {
+	@include falling (3%, 10s, 10px, 0.5s);
+}
+.confetti04 {
+	@include falling (4%, 9s, 15px, 0.3s);
+}
+
+.confetti1 {
+	@include falling (5%, 12s, 8px);
+}
+.confetti11 {
+	@include falling (6%, 22s, 19px, 0.5s);
+}
+.confetti12 {
+	@include falling (7%, 9s, 8px);
+}
+.confetti13 {
+	@include falling (8%, 14s, 12px);
+}
+.confetti14 {
+	@include falling (9%, 10s, 15px, 0.3s);
+}
+
+.confetti2 {
+	@include falling (10%, 22s, 8px);
+}
+.confetti21 {
+	@include falling (11%, 12s, 16px, 0.5s);
+}
+.confetti22 {
+	@include falling (12%, 15s, 16px);
+}
+.confetti23 {
+	@include falling (13%, 20s, 10px, 0.5s);
+}
+.confetti24 {
+	@include falling (14%, 12s, 16px);
+}
+
+.confetti3 {
+	@include falling (15%, 9s, 11px);
+}
+.confetti31 {
+	@include falling (16%, 12s, 10px, 0.3s);
+}
+.confetti32 {
+	@include falling (17%, 15s, 16px, 0.5s);
+}
+.confetti33 {
+	@include falling (18%, 22s, 19px);
+}
+.confetti34 {
+	@include falling (19%, 20s, 10px, 0.5s);
+}
+
+.confetti4 {
+	@include falling (20%, 12s, 10px);
+}
+.confetti41 {
+	@include falling (21%, 22s, 10px, 0.3s);
+}
+.confetti42 {
+	@include falling (22%, 15s, 19px);
+}
+.confetti43 {
+	@include falling (23%, 10s, 8px);
+}
+.confetti44 {
+	@include falling (24%, 22s, 16px, 0.5s);
+}
+
+.confetti5 {
+	@include falling (25%, 8s, 16px, 0.3s);
+}
+.confetti51 {
+	@include falling (26%, 22s, 8px);
+}
+.confetti52 {
+	@include falling (27%, 15s, 16px);
+}
+.confetti53 {
+	@include falling (28%, 20s, 12px);
+}
+.confetti54 {
+	@include falling (29%, 12s, 19px, 0.3s);
+}
+
+.confetti6 {
+	@include falling (30%, 9s, 16px);
+}
+.confetti61 {
+	@include falling (31%, 12s, 15px, 0.5s);
+}
+.confetti62 {
+	@include falling (32%, 20s, 14px, 0.3s);
+}
+.confetti63 {
+	@include falling (33%, 10s, 15px, 0.5s);
+}
+.confetti64 {
+	@include falling (34%, 8s, 14px);
+}
+
+.confetti7 {
+	@include falling (35%, 22s, 8px);
+}
+.confetti71 {
+	@include falling (36%, 9s, 10px, 0.5s);
+}
+.confetti72 {
+	@include falling (37%, 8s, 19px);
+}
+.confetti73 {
+	@include falling (38%, 20s, 12px, 0.5s);
+}
+.confetti74 {
+	@include falling (39%, 18s, 19px, 0.3s);
+}
+
+.confetti8	{
+	@include falling (40%, 22s, 10px);
+}
+.confetti81	{
+	@include falling (41%, 9s, 19px, 0.5s);
+}
+.confetti82	{
+	@include falling (42%, 22s, 11px);
+}
+.confetti83	{
+	@include falling (43%, 26s, 8px, 0.3s);
+}
+.confetti84	{
+	@include falling (44%, 12s, 12px);
+}
+
+.confetti9	{
+	@include falling (45%, 14s, 19px);
+}
+.confetti91	{
+	@include falling (46%, 10s, 17px, 0.5s);
+}
+.confetti92	{
+	@include falling (47%, 15s, 17px);
+}
+.confetti93	{
+	@include falling (48%, 10s, 19px, 0.3s);
+}
+.confetti94	{
+	@include falling (49%, 22s, 17px);
+}
+
+.confetti100 {
+	@include falling (50%, 9s, 16px);
+}
+.confetti101 {
+	@include falling (51%, 20s, 16px);
+}
+.confetti102 {
+	@include falling (52%, 12s, 19px, 0.3s);
+}
+.confetti103 {
+	@include falling (53%, 20s, 16px);
+}
+.confetti104 {
+	@include falling (54%, 12s, 15px);
+}
+
+.confetti110 {
+	@include falling (55%, 17s, 17px, 0.3s);
+}
+.confetti111 {
+	@include falling (56%, 14s, 14px, 0.5s);
+}
+.confetti112 {
+	@include falling (57%, 9s, 19px);
+}
+.confetti113 {
+	@include falling (58%, 11s, 17px);
+}
+.confetti114 {
+	@include falling (59%, 10s, 14px, 0.3s);
+}
+
+.confetti120 {
+	@include falling (60%, 12s, 10px);
+}
+.confetti121 {
+	@include falling (61%, 14s, 19px);
+}
+.confetti122 {
+	@include falling (62%, 8s, 10px, 0.5s);
+}
+.confetti123 {
+	@include falling (63%, 20s, 12px);
+}
+.confetti124 {
+	@include falling (64%, 18s, 10px);
+}
+
+.confetti130 {
+	@include falling (65%, 22s, 19px, 0.3s);
+}
+.confetti131 {
+	@include falling (66%, 18s, 14px, 0.5s);
+}
+.confetti132 {
+	@include falling (67%, 15s, 15px);
+}
+.confetti133 {
+	@include falling (68%, 9s, 19px, 0.5s);
+}
+.confetti134 {
+	@include falling (69%, 19s, 8px, 0.3s);
+}
+
+.confetti140 {
+	@include falling (70%, 13s, 14px);
+}
+.confetti141 {
+	@include falling (71%, 18s, 14px);
+}
+.confetti142 {
+	@include falling (72%, 12s, 14px, 0.5s);
+}
+.confetti143 {
+	@include falling (73%, 19s, 14px, 0.3s);
+}
+.confetti144 {
+	@include falling (74%, 16s, 19px);
+}
+
+.confetti150 {
+	@include falling (75%, 16s, 15px);
+}
+.confetti151 {
+	@include falling (76%, 18s, 14px);
+}
+.confetti152 {
+	@include falling (77%, 13s, 16px, 0.3s);
+}
+.confetti153 {
+	@include falling (78%, 10s, 17px);
+}
+.confetti154 {
+	@include falling (79%, 19s, 15px, 0.5s);
+}
+
+
+.confetti160 {
+	@include falling (80%, 10s, 17px);
+}
+.confetti161 {
+	@include falling (81%, 16s, 19px, 0.3s);
+}
+.confetti162 {
+	@include falling (82%, 11s, 19px);
+}
+.confetti163 {
+	@include falling (83%, 17s, 17px);
+}
+.confetti164 {
+	@include falling (84%, 14s, 19px, 0.5s);
+}
+
+
+.confetti170 {
+	@include falling (85%, 18s, 16px, 0.5s);
+}
+.confetti171 {
+	@include falling (86%, 15s, 14px);
+}
+.confetti172 {
+	@include falling (87%, 8s, 16px);
+}
+.confetti173 {
+	@include falling (88%, 10s, 19px, 0.3s);
+}
+.confetti174 {
+	@include falling (89%, 19s, 14px);
+}
+
+.confetti180 {
+	@include falling (90%, 8s, 15px, 0.3s);
+}
+.confetti181 {
+	@include falling (91%, 16s, 15px);
+}
+.confetti182 {
+	@include falling (92%, 10s, 16px, 0.5s);
+}
+.confetti183 {
+	@include falling (93%, 13s, 15px);
+}
+.confetti184 {
+	@include falling (94%, 8s, 19px, 0.3s);
+}
+
+
+.confetti190 {
+	@include falling (95%, 12s, 17px, 0.5s);
+}
+.confetti191 {
+	@include falling (96%, 23s, 16px);
+}
+.confetti192 {
+	@include falling (97%, 15s, 10px, 0.5s);
+}
+.confetti193 {
+	@include falling (98%, 18s, 17px);
+}
+.confetti194 {
+	@include falling (99%, 19s, 19px, 0.3s);
+}
+
+@media (max-width: 480px) {
+	
+	.card, .front, ul.back {
+		height: 60vh;
+	}
+
+	.card {
+		top: 255px;
+	}
+
+	.front {
+		background-image: url('images/card-mobile-cover-@2x.jpg');
+
+	}
+
+	ul.back {
+		background-image: url('images/card-mobile-inside-@2x.jpg');
+	}
+
+	.audio-player {
+	bottom: 0;
+	}
+	
+}

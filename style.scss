@@ -109,7 +109,7 @@ a {
 	@include centercenter;
 }
 
-.lightblub {
+.lightbulb {
 	color: yellow;
     font-size: 50px;
     font-weight: bold;
@@ -117,11 +117,36 @@ a {
 	top: 10px;
 	left: 42%;
 	z-index: 2;
+	transform: rotate(45deg);
+	animation: flash 5s linear infinite;
 	-webkit-transform: rotate(45deg);
 	-webkit-animation: flash 5s linear infinite;
+	-moz-transform: rotate(45deg);
+	-moz-animation: flash 5s linear infinite;
+
+}
+
+@keyframes flash {
+	20%, 60% {
+		opacity: 1
+	}
+
+	0%, 19%, 24%, 59%, 65%, 100% {
+		opacity: 0;
+	}
 }
 
 @-webkit-keyframes flash {
+	20%, 60% {
+		opacity: 1
+	}
+
+	0%, 19%, 24%, 59%, 65%, 100% {
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes flash {
 	20%, 60% {
 		opacity: 1
 	}
@@ -237,15 +262,14 @@ a {
 }
 
 .aboutimg {
-	@include column(3);
-	@include push(1);
+	@include column(4);
 	text-align: center;
 	
 	img {
 		width: 250px;
 		border: $secondcol 2px solid;
 		padding: 5px;
-		text-align: center;
+		vertical-align: center;
 	}
 }
 
@@ -457,7 +481,6 @@ img {
 	text-align: center;
 	h3 {
 		text-align: center;
-		margin: 0 0 20px;
 	}
 	img {
 		width: 45%;
