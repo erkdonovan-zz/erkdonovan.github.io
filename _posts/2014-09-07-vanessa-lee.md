@@ -13,7 +13,7 @@ Vanessa and I met earlier this year at Project Owl (a co-working space in Toront
 
 <img src="../images/blog-images/2014-9/P9092489.jpg"> 
 
-After talking for a while about Vanessa stopping my the office (where I work 9-5ish) to show me how the web based note system was coming, I convienced her that she needed me to take a few headshoots, just encase she ever needed one. 
+After talking for a while about Vanessa stopping my the office (where I work 9-5ish) to show me how the web based note system was coming, I convienced her that she needed me to take a few headshots, just encase she ever needed one. 
 
 And she did. 
 

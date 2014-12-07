@@ -9,7 +9,7 @@ categories:
 
 I first learned what HTML was in grade 10 when I wanted to see how websites where built. So one day I got a book on it and I started building very basic, poorly designed, frame based websites for my friend’s sport teams and fan pages for celebrities I was a fan of.
 
-<em>And then one day I just stopped.</em>
+<span class="standout">And then one day I just stopped.</span>
 
 I never wanted to work in tech growing up. I had always been great with computers and was able to learn software quickly, but I had a set back that same year. In grade 10, I took the Intro to Drafting class in high school. I was in love with architecture and buildings and how you could use a computer to draw plans. What ended up happening, a side from me learning AutoCAD, as I was the only girl in a class of 11, where the computer pods each held five students. Hence, I sat alone. Every day. I was consistently reminded by the other students that it was not a place for me or for other girls.
 
@@ -21,4 +21,4 @@ But! Now I work in the tech industry, and although I am not on the dev team and 
 
 Two nights a week I walk from work over to The Lab on Queen St W and I learn to code for two hours with other students, one teacher, and two+ awesome mentors that help us when we are confused. And it’s two nights a week that I am enjoying and happy to be extending my “in front of the computer” hours.
 
-I will be taking the Web Development course until mid-December and by then I should have a well rounded understanding of HTML5, CSS3, and responsive design! And yesterday!, while one of my co-workers (a real dev) was showing me what something meant a few others where talking (loudly!) and I asked them to shhh because the devs where working, including me!
+I will be taking the Web Development course until mid-December and by then I should have a well rounded understanding of HTML5, CSS3, and responsive design! And yesterday!, while one of my co-workers (a real dev) was showing me what something meant a few others were talking (loudly!) and I asked them to shhh because the devs were working, including me!
