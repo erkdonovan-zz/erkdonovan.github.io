@@ -18,6 +18,6 @@ Dan started the steaks during the day, prepping them with salt and then a few wi
 
 <img src="../images/blog-images/2014-9/P8182297.JPG"> 
 
-Can you read the article <a href="https://theblueprint.com/features/dinner-nomiku/">here.</a>
+<span class="standout">Can you read the article <a href="https://theblueprint.com/features/dinner-nomiku/">here.</a></span>
 
 <img src="../images/blog-images/2014-9/P9082420.JPG"> 
