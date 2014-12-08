@@ -118,11 +118,11 @@ a {
 	left: 42%;
 	z-index: 2;
 	transform: rotate(45deg);
-	animation: flash 5s linear infinite;
+	animation: flash 4s linear infinite;
 	-webkit-transform: rotate(45deg);
-	-webkit-animation: flash 5s linear infinite;
+	-webkit-animation: flash 4s linear infinite;
 	-moz-transform: rotate(45deg);
-	-moz-animation: flash 5s linear infinite;
+	-moz-animation: flash 4s linear infinite;
 
 }
 
@@ -131,17 +131,17 @@ a {
 		opacity: 1
 	}
 
-	0%, 19%, 24%, 59%, 65%, 100% {
+	0%, 18%, 24%, 58%, 65%, 100% {
 		opacity: 0;
 	}
 }
 
 @-webkit-keyframes flash {
-	20%, 60% {
+	20%, 60%, 80% {
 		opacity: 1
 	}
 
-	0%, 19%, 24%, 59%, 65%, 100% {
+	0%, 18%, 24%, 58%, 65%, 78%, 85%, 100% {
 		opacity: 0;
 	}
 }
@@ -151,7 +151,7 @@ a {
 		opacity: 1
 	}
 
-	0%, 19%, 24%, 59%, 65%, 100% {
+	0%, 18%, 24%, 58%, 65%, 100% {
 		opacity: 0;
 	}
 }
