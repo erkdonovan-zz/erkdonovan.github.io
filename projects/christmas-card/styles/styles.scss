@@ -5,34 +5,19 @@
 	-webkit-animation-delay: $delay;
 }
 
-body {
-	background: #000;
-	width: 100%;
-	padding: 0;
-	margin: 0;
-}
-
-.nav {
-	img {
-		width: 150px;
-		padding: 10px;
-	}
-}
-
 .precard {
 	background: #000;
 	width: 100%;
-	position: relative;
-	height: 94vh;
+	position: absolute;
+	top: 51px;
+	bottom: 0;
 }
 
 .card {
 	width: 100%;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%,-50%);
-	height: 94vh;
+position: absolute;
+top: 0;
+bottom: 0;
 	overflow: hidden;
 	background: #000;
 }
@@ -45,34 +30,33 @@ body {
 }
 
 #audio-player {
-	background-image: url('images/audio-on.png');
+	background-image: url('images/christmas-card/audio-on.png');
 	background-size: 50px 50px;
 	display: block;
 	width: 50px;
 	height: 50px;
 	&.player-play {
-		background-image: url('images/audio-off.png');
+		background-image: url('images/christmas-card/audio-off.png');
 	}
 }
 
-.front, ul.back {
+.front, .back {
 	width: 100%;
-	height: 94vh;
 	background-size: 100%;
 	background-repeat: no-repeat;
 	background-position: top center;
     position: absolute;
     transition: all 2s linear;
+    img {
+    	margin: auto;
+    }
 }
 
 .front {
-	background-image: url('images/card-cover-@2x.jpg');
-	background-repeat: no-repeat;
     left: 0;
 }
 
-ul.back {
-	background-image: url('images/card-inside-@2x.jpg');
+.back {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
@@ -83,7 +67,7 @@ input#toggle {
 	display: none;
 }
 
-input#toggle:checked + ul.back { 
+input#toggle:checked + .back {
 	right: 0;
 }
 
@@ -93,8 +77,10 @@ input#toggle:checked ~ .front {
 
 label[for="toggle"] {
 	position: fixed;
+//position: absolute;
 	bottom: 0;
 	right: 0;
+	z-index: 999;
 }
 
 .inside, .outside {
@@ -107,17 +93,17 @@ label[for="toggle"] {
 
 .inside {
 	display: block;
-	background-image: url('images/button-nor.png');
+	background-image: url('images/christmas-card/button-nor.png');
 	&:hover {
-	background-image: url('images/button-rollover.png');
+	background-image: url('images/christmas-card/button-rollover.png');
 	}
 }
 
 .outside {
 	display: none;
-	background-image: url('images/button-back-nor.png');
+	background-image: url('images/christmas-card/button-back-nor.png');
 	&:hover {
-	background-image: url('images/button-back-rollover.png');
+	background-image: url('images/christmas-card/button-back-rollover.png');
 	}
 }
 
@@ -132,6 +118,8 @@ input#toggle:checked ~ .front label .outside {
 .snow {
 	position: absolute;
 	color: #fff;
+	pointer-events: none;
+	z-index: 1;
 }
 
 .snow01 {
@@ -789,27 +777,23 @@ input#toggle:checked ~ .front label .outside {
 	@include falling (99%, 19s, 19px, 0.3s);
 }
 
-@media (max-width: 480px) {
-	
-	.card, .front, ul.back {
-		height: 60vh;
-	}
 
-	.card {
-		top: 255px;
+@media (max-width: 640px) {
+	.front, .back {
+		padding-top: 100%;
+		background-size: 100%;
+
+		img {
+			display: none;
+		}
 	}
 
 	.front {
-		background-image: url('images/card-mobile-cover-@2x.jpg');
-
+		background-image: url('images/christmas-card/card-mobile-cover-@2x.jpg');
 	}
 
-	ul.back {
-		background-image: url('images/card-mobile-inside-@2x.jpg');
+	.back {
+		background-image: url('images/christmas-card/card-mobile-inside-@2x.jpg');
 	}
 
-	.audio-player {
-	bottom: 0;
-	}
-	
 }

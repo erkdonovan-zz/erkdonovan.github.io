@@ -5,10 +5,14 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<title>The Blueprint</title>
 	<link href="http://theblueprint.com/assets/images/meta/favicon.ico" rel="shortcut icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
 <style type="text/css">
+	body {
+		background: black;
+	}
 	.free-shipping-link, .masthead .nav {
 		display: none;
 	}
@@ -20,14 +24,14 @@
 
 <div class="precard">
 
+
+<div class="card">
 	<div class="audio-player">
 		<a href="#" class="player-pause" id="audio-player">
 		</a>
 	</div>
-
-<div class="card">
 	  <input type="checkbox" id="toggle" name="toggle">
-		  <ul class="back">
+		  <div class="back">
 		  <!-- confetti -->
 
 		<div class="confetti confetti01">&#x02666;</div>
@@ -147,7 +151,9 @@
 		<div class="confetti confetti192">&#x02666;</div>
 		<div class="confetti confetti193">&#x02666;</div>
 		<div class="confetti confetti194">&#x02666;</div>
-		  </ul>
+
+<img src="<?php echo get_site_url();?>/wp-content/themes/blueprint-wp/images/christmas-card/card-inside-@2x.jpg">
+		  </div>
 
 	<div class="front">
 
@@ -272,13 +278,18 @@
 		<div class="snow snow192">&#x02217;</div>
 		<div class="snow snow193">&#x02217;</div>
 		<div class="snow snow194">&#x02217;</div>
+
+
+		<img src="<?php echo get_site_url();?>/wp-content/themes/blueprint-wp/images/christmas-card/card-cover-@2x.jpg">
+
+
 	</div>
 </div>
 </div>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script type="text/javascript">
-	var myaudio = new Audio('images/Deckthehalls.mp3');
+	var myaudio = new Audio('https://theblueprint.com/wp-content/uploads/2014/12/Deckthehalls.mp3');
 
 	myaudio.addEventListener('ended', function() {
    	this.currentTime = 0;
@@ -298,5 +309,7 @@
 		}
 	})
 </script>
+
+
 </body>
 </html>
