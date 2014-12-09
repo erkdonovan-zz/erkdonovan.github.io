@@ -5,6 +5,15 @@
 	-webkit-animation-delay: $delay;
 }
 
+.nav img {
+	width: 150px;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
 .precard {
 	background: #000;
 	width: 100%;
@@ -30,7 +39,7 @@ bottom: 0;
 }
 
 #audio-player {
-	background-image: url('images/christmas-card/audio-on.png');
+	background-image: url('images/audio-on.png');
 	background-size: 50px 50px;
 	display: block;
 	width: 50px;
@@ -93,17 +102,17 @@ label[for="toggle"] {
 
 .inside {
 	display: block;
-	background-image: url('images/christmas-card/button-nor.png');
+	background-image: url('images/button-nor.png');
 	&:hover {
-	background-image: url('images/christmas-card/button-rollover.png');
+	background-image: url('images/button-rollover.png');
 	}
 }
 
 .outside {
 	display: none;
-	background-image: url('images/christmas-card/button-back-nor.png');
+	background-image: url('images/button-back-nor.png');
 	&:hover {
-	background-image: url('images/christmas-card/button-back-rollover.png');
+	background-image: url('images/button-back-rollover.png');
 	}
 }
 
@@ -789,11 +798,11 @@ input#toggle:checked ~ .front label .outside {
 	}
 
 	.front {
-		background-image: url('images/christmas-card/card-mobile-cover-@2x.jpg');
+		background-image: url('images/card-mobile-cover-@2x.jpg');
 	}
 
 	.back {
-		background-image: url('images/christmas-card/card-mobile-inside-@2x.jpg');
+		background-image: url('images/card-mobile-inside-@2x.jpg');
 	}
 
 }
