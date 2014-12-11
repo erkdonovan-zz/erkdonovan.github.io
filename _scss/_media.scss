@@ -1,7 +1,7 @@
 // Portrait tablet and small desktops
 @media (max-width: 960px) {
 	.header {
-		height: 60vh;
+		
 	}
 
 	.wrapper {
@@ -12,15 +12,57 @@
 		margin: 10px;
 	}
 
-	.bottom-arrow {
-		display: none;
-	}
 }
  
 // Landscape phone to portrait tablet
 @media (max-width: 768px) {
-	.weblinks, .social, .left, .right, .aboutimg, .abouttext {
+	.weblinks, .social, .left, .right, .aboutimg, .abouttext, .third-left, .third-middle, .third-right {
 		@include column(12);
+	}
+
+	.header {
+		padding: 200px 0 0;
+	}
+
+	.wrapper, .wrapperheader {
+		padding: 15px 0;
+	}
+
+	.quotes {
+		img {
+			width: 125px;
+			margin: 5px;
+			top: 15px;
+		}
+	}
+
+	.lightbulb {
+		top: 25px;
+	}
+
+	.bottom {
+		margin: 0 auto;
+	}
+	
+	.nav {
+		ul {
+			display: inline-block;
+			padding: 0;
+			margin: 0;
+			li {
+				a {
+					padding: 15px;
+				}
+			}
+		}
+	}
+
+	.social {
+		padding: 50px 0 0;
+	}
+
+	.desktophidden {
+		display: none;
 	}
 }
  
@@ -28,6 +70,14 @@
 @media (max-width: 480px) {
 	.header img {
 		width: 300px;
+	}
+
+	.wrapperheader {
+		padding: 50px 0 0;
+		width: 100%;
+		h3 {
+			padding: 0;
+		}
 	}
 
 	.webdev img {
@@ -42,10 +92,6 @@
 		padding-top: 5px;
 	}
 
-	.no-bullet-list, .bullet-list, .right ul {
-		@include nopadormar;
-	}
-
 	.mobilehidden {
 		display: none;
 	}
@@ -57,6 +103,10 @@
 	input,textarea {
 	padding: 5px 0;
 	width: 300px;
+	}
+
+	.social {
+		padding: 15px 0;
 	}
 
 	.nav {
