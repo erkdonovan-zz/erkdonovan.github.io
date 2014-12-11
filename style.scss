@@ -209,8 +209,8 @@ a {
 	@include column(6);
 }
 
-.third-left, .third-middle, .third-right {
-	@include column(4);
+.full-left, .full-right {
+	@include column(6);
 }
 
 // NAV 
@@ -346,35 +346,28 @@ h5 ~ p {
 .quotes {
 	text-align: center;
 	position: relative;
-	padding: 20px 0;
+	padding: 10px;
+	background: $secondcol;
+	p {
+		color: #fff;
+		text-align: center;
+		padding: 10px;
+	}	
 	img {
 		border-radius: 50%;
 		border: #fff solid 1px;
 		padding: 5px; 
 		margin: 0 20px;
 		width: 150px;
-		position: relative;
-		top: 50%;
 	}
 }
 
-.quotes-pink {
-	background: $secondcol;
+.img-right {
+	float: right;
 }
 
-.quotes-teal {
-	background: $firstcol;
-}
-
-blockquote {
-	padding: 20px 5px 10px;
-	color: #fff;
-	vertical-align: top;
-}
-
-i.blockquote {
-	color: #fff;
-	text-align: center;
+.img-left {
+	float: left;
 }
 
 // CONTACT
