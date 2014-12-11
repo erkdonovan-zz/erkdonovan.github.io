@@ -16,8 +16,12 @@
  
 // Landscape phone to portrait tablet
 @media (max-width: 768px) {
-	.weblinks, .social, .left, .right, .aboutimg, .abouttext, .third-left, .third-middle, .third-right {
+	.weblinks, .social, .left, .right, .aboutimg, .abouttext, .full-left, .full-right {
 		@include column(12);
+	}
+
+	.img-left, .img-right {
+		display: block;
 	}
 
 	.header {
