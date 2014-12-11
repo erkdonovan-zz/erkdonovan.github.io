@@ -346,6 +346,7 @@ h5 ~ p {
 .quotes {
 	text-align: center;
 	position: relative;
+	padding: 20px 0;
 	img {
 		border-radius: 50%;
 		border: #fff solid 1px;
@@ -353,7 +354,7 @@ h5 ~ p {
 		margin: 0 5px;
 		width: 150px;
 		position: relative;
-		top: 25px;
+		top: 50%;
 	}
 }
 
