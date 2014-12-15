@@ -32,20 +32,8 @@
 
 </head>
 <body>
-	<!-- NAV -->
-	<div class="nav" id="nav">
-		<ul>
-			<li><a href="#">Home</a></li>
-			<li><a href="#about">About</a></li>
-			<li><a href="#photo">Photography</a></li>
-			<li><a href="#webdev">Web Development</a></li>
-			<li><a href="#contact">Contact</a></li>
-			<li><a href="/blog">Lastest Work</a></li>
-		</ul>
-	</div>
 	<!-- HEADER	-->
 	<div class="header">
-	<img src="images/background-photo.png" class="background-img">
 		<div class="wrapperheader">
 			<div class="lightbulb mobilehidden">&#10038;</div>
 			<img src="images/logo-with-name.png" alt="Erika Donovan Logo">
@@ -59,6 +47,17 @@
 			</ul>
 		</div>
 	</div>
+	<!-- NAV -->
+	<div class="nav" id="nav">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#photo">Photography</a></li>
+			<li><a href="#webdev">Web Development</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="/blog">Lastest Work</a></li>
+		</ul>
+	</div>
 	<!-- ABOUT -->
 	<div class="about section" id="about">
 		<div class="wrapper clearfix">
@@ -69,54 +68,55 @@
 			</div>
 			<div class="abouttext">
 				<h2>Hi! I'm Erika!</h2>
-				<h4>I love building websites and taking photos! </h4>
-				<!-- <h5>Other things I do:</h5> -->
-				<div class="skills">
-					<ul class="no-bullet-list skills">
-						<li>
-							<i class="fa fa-camera fa-2x"></i>
-							<h5>Photography</h5>
-							<p>Family and Sports</p>
-						</li>
-						<li>
-							<i class="fa fa-code fa-2x"></i>
-							<h5>Coding</h5>
-							<p>HTML5, CSS3, Responsive Design</p>
-						</li>
-						<li>
-							<i class="fa fa-paint-brush fa-2x"></i>
-							<h5>Creative</h5>
-							<p>Painting & Crocheting</p>
-						</li>
-						<li>
-							<i class="fa fa-strikethrough fa-2x"></i>
-							<h5>Editing</h5>
-							<p>Novellas and short stories</p>
-						</li>
-						<li>
-							<i class="fa fa-cutlery fa-2x"></i>
-							<h5>Baking</h5>
-							<p>Muffins, French Macarons, Cakes</p>
-						</li>
-						<li>
-							<i class="fa fa-check fa-2x"></i>
-							<h5>Certified</h5>
-							<p>Smart Serve and First Aid & CPR</p>
-						</li>
-					</ul>
-				</div>
+				<h4>I love building websites and taking photos!</h4>
+				<h3>My first camera...</h3>
+				<p>I discovered photography in a Happy Meal. The lime green camera came with the meal (chicken nuggets...I believe) and it started my obsession with taking beautiful photos. I took photos of everything! My family, our pets, random stranger’s pets, trees… everything! Since my dad is a photographer, he passed down one of his older film cameras to me when I was 12 and taught me some tips and tricks. Now I focus on family portraits and sport photos. <span class="standout">My first camera was in a Happy Meal and now photography is my Happy Place.</span></p>
+				<h3>My first website...</h3>
+				<p>I taught myself HTML in when I was high school. I was curious about how the Internet worked and how websites were built. My dad bought me my first book on HTML and I taught myself. I built my first website at age 15 for my friends’ sports teams. Recently, I started working in the tech industry and fell back in love with the tech world. I have recently started taking HackerYou courses to learn how to build amazingly, wonderful, creative, static websites. <span class="standout">What I love most is how you can take letters and characters and build something beautiful.</span></p>
 			</div>
 		</div>
 	</div>
 </div>
+
+<!-- SKILLS -->
+	<div class="skills clearfix">
+		<div class="skills-items">
+			<i class="fa fa-camera fa-2x"></i>
+			<h5>Photography</h5>
+			<p>Family and Sports</p>
+		</div>
+		<div class="skills-items">
+			<i class="fa fa-code fa-2x"></i>
+			<h5>Coding</h5>
+			<p>HTML5, CSS3, Responsive Design</p>
+		</div>
+		<div class="skills-items">
+			<i class="fa fa-paint-brush fa-2x"></i>
+			<h5>Creative</h5>
+			<p>Painting & Crocheting</p>
+		</div>
+		<div class="skills-items">
+			<i class="fa fa-strikethrough fa-2x"></i>
+			<h5>Editing</h5>
+			<p>Novellas and short stories</p>
+		</div>
+		<div class="skills-items">
+			<i class="fa fa-cutlery fa-2x"></i>
+			<h5>Baking</h5>
+			<p>Muffins, French Macarons, Cakes</p>
+		</div>
+		<div class="skills-items">
+			<i class="fa fa-check fa-2x"></i>
+			<h5>Certified</h5>
+			<p>Smart Serve and First Aid & CPR</p>
+		</div>
+	</div>
+
 <!-- PHOTOGRPAHY -->
 <div class="photography section" id="photo">
 	<div class="wrapper clearfix">
 		<h2>photography</h2>
 		<div class="left">
-			<h3>My first camera...</h3>
-			<p>I discovered photography in a Happy Meal. The lime green camera came with the meal (chicken nuggets...I believe) and it started my obsession with taking beautiful photos. I took photos of everything! My family, our pets, random stranger’s pets, trees… everything! Since my dad is a photographer, he passed down one of his older film cameras to me when I was 12 and taught me some tips and tricks. Now I focus on family portraits and sport photos. <span class="standout">My first camera was in a Happy Meal and now photography is my Happy Place.</span></p>
-			
 			<!-- <h4>Lastest Photography Post: </h4>
 			{% for post in site.posts limit: 1 %}
 			<div class="post_info">
@@ -192,41 +192,59 @@
 	<div class="webdev section" id="webdev">
 		<div class="wrapper clearfix">
 			<h2>web development</h2>
-			<div class="left">
-				<h3>My first website...</h3>
-				<p>I taught myself HTML in when I was high school. I was curious about how the Internet worked and how websites were built. My dad bought me my first book on HTML and I taught myself. I built my first website at age 15 for my friends’ sports teams. Recently, I started working in the tech industry and fell back in love with the tech world. I have recently started taking HackerYou courses to learn how to build amazingly, wonderful, creative, static websites. <span class="standout">What I love most is how you can take letters and characters and build something beautiful.</span></p>
-				<!-- <h3>Points and Stuffs</h3>
-				<ul class="bullet-list">
-					<li>point 1</li>
-					<li>point 2</li>
-					<li>point 3</li>
-				</ul> -->
-				<p>I also offer professional photos when building your website, if you need them!</p>
-				<div class="connect">
-					<a href="mailto:hello@erikadonovan.com?subject=Website" title="Let's Chat about a Website for you!">Let's Chat about a Website for you!</a>
+			<h3>Here is some of my work</h3>
+			<div class="webdev-port">
+				<a href="http://theblueprint.com/christmas-card/"><img src="images/websites/tbp-christmas-card.png" alt="The Blueprint Christmas Card"></a>
+				<div class="webdev-port-text">
+					<h4>The Blueprint Christmas Card</h4>
+					<p>Company Christmas card</p>
+					<ul class="no-bullet-list">
+						<li>HTML & CSS</li>
+						<li>Responsive</li>
+						<li>Animiaton</li>
+						<li>Positioning</li>
+						<li>JavaScript</li>
+					</ul>
 				</div>
 			</div>
-			<div class="right mobilehidden">
-				<h3>Here is some of my work</h3>
-				<p>(click on image to see the site in action)</p>
-				<ul>
-					<li>
-						<a href="#" class="readMore">The Blueprint Christmas Card</a>
-						<div class="hidden open"><a href="http://theblueprint.com/christmas-card/"><img src="images/websites/tbp-christmas-card.png" alt="The Blueprint Christmas Card"></a></div>
-					</li>
-					<li>
-						<a href="#" class="readMore">HackerYou Project - Home Page</a>
-						<div class="hidden"><a href="/projects/hackeryou/"><img src="images/websites/TorontosOutdoorAdventuresHome.png" alt="HackerYou Project 2 - Home Page"></a></div>
-					</li>
-					<li>
-						<a href="#" class="readMore">My website from September</a>
-						<div class="hidden"><a href="/projects/september-2014/"><img src="images/websites/ErikaDonovanSept2014.png" alt="My website in September 2014"></a></div>
-					</li>
-					<li>
-						<a href="#" class="readMore">My recent placeholder site</a>
-						<div class="hidden"><a href="/projects/placeholdersite/"><img src="images/websites/erikadonovanOct312014.png" alt="My website placeholder"></a></div>
-					</li>
-				</ul>
+			<div class="webdev-port">
+				<a href="/projects/hackeryou/"><img src="images/websites/TorontosOutdoorAdventuresHome.png" alt="HackerYou Project 2 - Home Page"></a>
+				<div class="webdev-port-text">
+					<h4>HackerYou Project - Home Page</h4>
+					<p>Second HackerYou project</p>
+					<ul class="no-bullet-list">
+						<li>HTML & CSS</li>
+						<li>Responsive</li>
+						<li>Positioning</li>
+					</ul>
+				</div>
+			</div>
+			<div class="webdev-port">
+				<a href="/projects/september-2014/"><img src="images/websites/ErikaDonovanSept2014.png" alt="My website in September 2014"></a>
+				<div class="webdev-port-text">
+					<h4>My website from September</h4>
+					<p></p>
+					<ul class="no-bullet-list">
+						<li>HTML & CSS</li>
+						<li>Responsive</li>
+					</ul>
+				</div>
+			</div>
+			<div class="webdev-port">
+				<a href="/projects/placeholdersite/"><img src="images/websites/erikadonovanOct312014.png" alt="My website placeholder"></a>
+				<div class="webdev-port-text">
+					<h4>My recent placeholder site</h4>
+					<p></p>
+					<ul class="no-bullet-list">
+						<li>HTML & CSS</li>
+						<li>Responsive</li>
+						<li>Animiaton</li>
+					</ul>
+				</div>
+			</div>
+			<div class="connect">
+			<p>I also offer professional photos when building your website, if you need them!</p>
+				<a href="mailto:hello@erikadonovan.com?subject=Website" title="Let's Chat about a Website for you!">Let's Chat about a Website for you!</a>
 			</div>
 		</div>
 	</div>
@@ -245,20 +263,14 @@
 
 	<!-- CONTACT -->
 	<div class="bottom section" id="contact">
-		<div class="wrapper clearfix">
-			<div class="left contact">
+		<div class="wrapper">
 				<h2>Contact Me!</h2>
-
 				<form action="http://forms.brace.io/hello@erikadonovan.com" method="POST">
 					<input type="text" name="name" placeholder="Name">
 					<input type="email" name="_replyto" placeholder="Email">
 					<textarea id="message" name="message" class="textarea" spellcheck="true" rows="10" cols="50" placeholder="Message"></textarea>
 					<input type="submit" value="Send">
 				</form>
-			</div>
-			<div class="right">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.2168799829!2d-79.37770610000003!3d43.71827125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C+ON!5e0!3m2!1sen!2sca!4v1418260254386" width="100%" height="450" frameborder="0" style="border:0"></iframe>
-			</div> 
 		</div>
 	</div>
 
@@ -279,10 +291,9 @@
 	</script>
 	<script type="text/javascript" src="jquery.sticky.js"></script>
 	<script>
-	// 	$(window).load(function(){
-	// 		$("#nav").sticky({ topSpacing: 0 });
-	// 	});
-	// </script>
+		$(window).load(function(){
+			$("#nav").sticky({ topSpacing: 0 });
+		});
+	</script>
 </body>
 </html>
-

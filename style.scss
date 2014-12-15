@@ -89,7 +89,9 @@ a {
 .header {
 	width: 100%;
 	text-align: center;
-	background: #fff;
+	background: $firstcol;
+	height: 700px;
+	display: block;
 	padding-bottom: 30px;
 	position: relative;
 	border-bottom: $secondcol 2px solid;
@@ -215,10 +217,9 @@ a {
 
 // NAV 
 
-.nav, .nav-blog {
+.nav {
 	width: 100%;
 	background: $secondcol;
-	position: fixed;
 	z-index: 9999;
 	ul {
 		margin: 0;
@@ -238,6 +239,10 @@ a {
 	}
 }
 
+.nav-blog {
+	position: fixed;
+}
+
 // ABOUT
 
 .about {
@@ -248,7 +253,7 @@ a {
 .aboutimg {
 	@include column(4);
 	text-align: center;
-	
+	margin: 70px 0;
 	img {
 		width: 250px;
 		border: $secondcol 2px solid;
@@ -268,73 +273,71 @@ a {
 	}
 }
 
+// SKILLS
+
 .skills {
-	@include nopadormar;
-	i {
+	width: 100%;
+	background: $firstcol;
+	color: #fff;
+	text-align: center;
+	padding: 25px 10px 15px;
+}
+
+.skills-items {
+	@include column(2);
+	vertical-align: top;
+	h5 {
+		margin: 0;
+		text-transform: capitalize;
 		text-align: center;
 	}
-	li {
-		display: inline-block;
-		width: 20%;
-		vertical-align: top;
+	p {
+		text-align: center;
 	}
-}
-
-h5 ~ p {
-	text-transform: capitalize;
-	@include nopadormar;
-	text-align: center;
-}
-
-// WEB DEV
-
-.webdev {
-	margin: 0 auto;
-}
-
-.webdev img {
-	width: 400px;
-	}
-
-.right ul {
-	list-style-type: none;
-}
-
-.hidden {
-	display: none;
-}
-
-.hidden.open {
-	display: block;
 }
 
 // PHOTOGRAPHY
 
-.photography {
-	img {
-	width: 100px;
-	margin: 2px;
-		&:hover {
-		background: rgba(247, 103, 92, 0.6);
-			}
-	}
-
-	li {
-		a {
-			display: inline-block;
-			margin-top: 0;
-			}
-		}
-}
-
-.flickr-photo1 {
-	background-image: url(images/work.jpg);
-	background-width: 100%;
-	background-position: center center;
-}
 
 .flickr {
 	@include column(4);
+	img {
+		width: 90%;
+	}
+}
+
+// WEB DEV
+
+.webdev-port {
+	@include column(3);
+	display: inline-block;
+	height: 450px;
+	background: $firstcol;
+	color: #fff;
+	p {
+		text-align: right;
+	}
+	ul {
+		li {
+			text-align: right;
+		}
+	}
+	img {
+		width: 100%;
+	}
+}
+
+.webdev-port-text {
+	padding: 10px;
+}
+
+.webdev-port-text {
+	padding: 10px;
+}
+
+.connect {
+	display: block;
+	@include column(12);
 }
 
 // BOTTOM - QUOTES AND SOCIAL

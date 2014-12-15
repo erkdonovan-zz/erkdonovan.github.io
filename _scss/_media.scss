@@ -1,15 +1,16 @@
 // Portrait tablet and small desktops
 @media (max-width: 960px) {
-	.header {
-		
-	}
-
 	.wrapper {
 		width: 80%;
 	}
 
 	.left, .right {
 		margin: 10px;
+	}
+
+	.webdev-port {
+		@include column(6);
+		margin-bottom: 15px;
 	}
 
 }
@@ -88,12 +89,8 @@
 		width: 200px;
 	}
 
-	.skills {
-		display: block;
-		li {
-			width: 100%;
-		}
-		padding-top: 5px;
+	.skills-items {
+		@include column(6)
 	}
 
 	.mobilehidden {
@@ -118,6 +115,14 @@
 			li {
 				padding: 10px;
 			}
+		}
+	}
+
+	.webdev-port {
+		@include column(12);
+		margin-bottom: 15px;
+		img {
+			width: 100%;
 		}
 	}
 }
