@@ -340,11 +340,7 @@ a {
 	@include column(12);
 }
 
-// BOTTOM - QUOTES AND SOCIAL
-
-.bottom-links {
-	margin: 50px;
-}
+// QUOTES
 
 .quotes {
 	text-align: center;
@@ -373,16 +369,16 @@ a {
 	float: left;
 }
 
+// BOTTOM 
+
+.bottom {
+	margin: 0 auto;
+}
+
 // CONTACT
 
 .form {
 	display: inline;
-}
-
-.contact {
-	ul {
-		padding: 0;
-	}
 }
 
 input,textarea {
