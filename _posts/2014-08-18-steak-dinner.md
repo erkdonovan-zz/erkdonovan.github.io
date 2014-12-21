@@ -3,7 +3,7 @@ layout: post
 title: Team Steak Dinner
 categories:
 - Photography
-- Work Life
+- Work
 ---
 
 The company that my day job is for (The Blueprint) secured and moved into our own office last week. And with that we needed to have a team dinner to celebrate! One of the items that we are selling online is the Nomiku, a sous vide home cooking kitchen tool, and my co-worker Dan (pictured below) had been using one for a few months. 

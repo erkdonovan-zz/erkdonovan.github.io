@@ -2,7 +2,7 @@
 layout: post
 title: Hmmm... I'm a Front-End Dev?
 categories: 
-- Web Development
+- Web
 ---
 
 Last Thursday night, around 9pm, we wrapped up the last class in the Part-Time HTML & CSS fall program and with that I’m officially a Front-End Developer!
