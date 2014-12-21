@@ -3,8 +3,8 @@ layout: post
 title: The Blueprint Christmas Card
 categories:
 - Photography
-- Web Development
-- Work Life
+- Web
+- Work
 ---
 
 A few weeks ago I was asked to build the company Christmas Card page. Thankfully we have an amazing designer (Rachel) on staff who designed the page and all I had to do was take the team photo and build the web page. 

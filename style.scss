@@ -10,8 +10,8 @@
 // BASIC
 
 body {
-	font-family: $basicfont;
-	font-size: $basefontsize;
+  font-family: $basicfont;
+  font-size: $basefontsize;
 }
 
 .container {
@@ -22,440 +22,449 @@ body {
 }
 
 h1 {
-	@include fontstuffs(2.7);
-	@include nopadormar;
-	font-family: $headerfont;
-	text-align: center;
+  @include fontstuffs(2.7);
+  @include nopadormar;
+  font-family: $headerfont;
+  text-align: center;
 }
 
 h2 {
-	@include fontstuffs(1.7);
-	text-transform: capitalize;
+  @include fontstuffs(1.7);
+  text-transform: capitalize;
 }
 
 h3 {
-	@include fontstuffs(1.3);
+  @include fontstuffs(1.3);
 }
 
 h4 {
-	@include fontstuffs(1.2);
-	@include nopadormar;
-	font-style: italic;
-	text-align: center;
+  @include fontstuffs(1.2);
+  @include nopadormar;
+  font-style: italic;
+  text-align: center;
 }
 h5 {
-	@include fontstuffs(1.1);
+  @include fontstuffs(1.1);
 }
 
 p {
-	@include fontstuffs();
-	line-height: 1.5;
+  @include fontstuffs();
+  line-height: 1.5;
 }
 
 a {
-	@include fontstuffs;
-	text-transform: capitalize;
-	text-decoration: none;
-	color: $firstcol;
-	font-weight: bold;
-	&:hover {
-	color: $secondcol;
-	text-decoration: underline;
-	}
+  @include fontstuffs;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: $firstcol;
+  font-weight: bold;
+  &:hover {
+  color: $secondcol;
+  text-decoration: underline;
+  }
 }
 
 .i {
-	color: black;
-	@include nopadormar;
+  color: black;
+  @include nopadormar;
 }
 
 .no-bullet-list {
-	list-style-type: none;
+  list-style-type: none;
 }
 
 .bullet-list {
-	list-style-type: square;
+  list-style-type: square;
 }
 
 // WRAPPER
 
 .wrapper {
-	max-width: 80%;
-	margin: 0 auto;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 // HEADER
 
 .header {
-	width: 100%;
-	text-align: center;
-	background: $firstcol;
-	height: 700px;
-	display: block;
-	padding-bottom: 30px;
-	position: relative;
-	border-bottom: $secondcol 2px solid;
-	
-	img {
-		width: 400px;
-	}
+  width: 100%;
+  text-align: center;
+  background: $firstcol;
+  height: 700px;
+  display: block;
+  padding-bottom: 30px;
+  position: relative;
+  border-bottom: $secondcol 2px solid;
+  
+  img {
+    width: 400px;
+  }
 
-	h3 {
-		padding: 5px 0 40px;
-		text-transform: uppercase;
-		text-align: center;
-	}
+  h3 {
+    padding: 5px 0 40px;
+    text-transform: uppercase;
+    text-align: center;
+  }
 }
 
 .header .background-img {
-	width: 100%;
+  width: 100%;
 }
 
 .wrapperheader {
-	@include centercenter;
+  @include centercenter;
 }
 
 .lightbulb {
-	color: yellow;
+  color: yellow;
     font-size: 50px;
     font-weight: bold;
-	position: absolute;
-	top: 10px;
-	left: 42%;
-	z-index: 2;
-	transform: rotate(45deg);
-	animation: flash 4s linear infinite;
-	-webkit-transform: rotate(45deg);
-	-webkit-animation: flash 4s linear infinite;
-	-moz-transform: rotate(45deg);
-	-moz-animation: flash 4s linear infinite;
+  position: absolute;
+  top: 10px;
+  left: 42%;
+  z-index: 2;
+  transform: rotate(45deg);
+  animation: flash 4s linear infinite;
+  -webkit-transform: rotate(45deg);
+  -webkit-animation: flash 4s linear infinite;
+  -moz-transform: rotate(45deg);
+  -moz-animation: flash 4s linear infinite;
 
 }
 
 @keyframes flash {
-	20%, 60% {
-		opacity: 1
-	}
+  20%, 60% {
+    opacity: 1
+  }
 
-	0%, 18%, 24%, 58%, 65%, 100% {
-		opacity: 0;
-	}
+  0%, 18%, 24%, 58%, 65%, 100% {
+    opacity: 0;
+  }
 }
 
 @-webkit-keyframes flash {
-	20%, 60%, 80% {
-		opacity: 1
-	}
+  20%, 60%, 80% {
+    opacity: 1
+  }
 
-	0%, 18%, 24%, 58%, 65%, 78%, 85%, 100% {
-		opacity: 0;
-	}
+  0%, 18%, 24%, 58%, 65%, 78%, 85%, 100% {
+    opacity: 0;
+  }
 }
 
 @-moz-keyframes flash {
-	20%, 60% {
-		opacity: 1
-	}
+  20%, 60% {
+    opacity: 1
+  }
 
-	0%, 18%, 24%, 58%, 65%, 100% {
-		opacity: 0;
-	}
+  0%, 18%, 24%, 58%, 65%, 100% {
+    opacity: 0;
+  }
 }
 
 .social {
-	list-style-type: none;
-	@include nopadormar;
-	
-	li {
-	display: inline-block;
-	vertical-align: top;
-	position: relative;
+  list-style-type: none;
+  @include nopadormar;
+  
+  li {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
 
-		a {
-		color: black;
-		@include basicpadding;
-			&:hover {
-				color: $firstcol;
-				text-decoration: none;
-			}
-		}
-	}
+    a {
+    color: black;
+    @include basicpadding;
+      &:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
 }
 
 // GENERAL
 
 .webhidden {
-	display: none;
+  display: none;
 }
 
 .standout {
-	color: $thirdcol;
-	@include fontstuffs(1.1);
-	font-weight: bold;
-	font-style: italic;
+  color: $thirdcol;
+  @include fontstuffs(1.1);
+  font-weight: bold;
+  font-style: italic;
 }
 
 // SECTIONS
 
 .section {
-	padding: 60px 0;
-	&:nth-child(even) {
-		background: $section1;
-	}
-	&:nth-child(odd) {
-		background: $section2;
-	}
+  padding: 60px 0;
+  &:nth-child(even) {
+    background: $section1;
+  }
+  &:nth-child(odd) {
+    background: $section2;
+  }
 }
 
 .left, .right {
-	@include column(6);
+  @include column(6);
 }
 
 .full-left, .full-right {
-	@include column(6);
+  @include column(6);
 }
 
 // NAV 
 
 .nav {
-	width: 100%;
-	background: $secondcol;
-	z-index: 9999;
-	ul {
-		margin: 0;
-		li {
-			display: inline-block;
-			padding: 30px 0;
-			a {
-				padding: 20px;
-				color: #000;
-				text-transform: uppercase;
-				&:hover {
-					color: $thirdcol;
-					text-decoration: none;
-				}
-			}
-		}
-	}
+  width: 100%;
+  background: $secondcol;
+  z-index: 9999;
+  ul {
+    margin: 0;
+    li {
+      display: inline-block;
+      padding: 30px 0;
+      a {
+        padding: 20px;
+        color: #000;
+        text-transform: uppercase;
+        &:hover {
+          color: $thirdcol;
+          text-decoration: none;
+        }
+      }
+    }
+  }
 }
 
 .nav-blog {
-	position: fixed;
+  position: fixed;
 }
 
 // ABOUT
 
 .about {
-	margin: 0 auto;
-	padding: 100px 0 75px;
+  margin: 0 auto;
+  padding: 100px 0 75px;
 }
 
 .aboutimg {
-	@include column(4);
-	text-align: center;
-	margin: 70px 0;
-	img {
-		width: 250px;
-		border: $secondcol 2px solid;
-		padding: 5px;
-		vertical-align: center;
-	}
+  @include column(4);
+  text-align: center;
+  margin: 70px 0;
+  img {
+    width: 250px;
+    border: $secondcol 2px solid;
+    padding: 5px;
+  }
+  p {
+    text-align: center;
+  }
 }
 
 .abouttext {
-	@include column(8);
-	text-align: center;
+  @include column(8);
+  text-align: center;
 
-	h2, h4, h5 {
-		@include nopadormar;
-		text-align: center;
-		padding: 5px 0 20px;
-	}
+  h2, h4, h5 {
+    @include nopadormar;
+    text-align: center;
+    padding: 5px 0 20px;
+  }
 }
 
 // SKILLS
 
 .skills {
-	width: 100%;
-	background: $firstcol;
-	color: #fff;
-	text-align: center;
-	padding: 25px 10px 15px;
+  width: 100%;
+  background: $firstcol;
+  color: #fff;
+  text-align: center;
+  padding: 25px 10px 15px;
 }
 
 .skills-items {
-	@include column(2);
-	vertical-align: top;
-	h5 {
-		margin: 0;
-		text-transform: capitalize;
-		text-align: center;
-	}
-	p {
-		text-align: center;
-	}
+  @include column(2);
+  vertical-align: top;
+  h5 {
+    margin: 0;
+    text-transform: capitalize;
+    text-align: center;
+  }
+  p {
+    text-align: center;
+  }
 }
 
 // PHOTOGRAPHY
 
 
 .flickr {
-	@include column(4);
-	img {
-		width: 90%;
-	}
+  @include column(4);
+  img {
+    width: 90%;
+  }
 }
 
 // WEB DEV
 
 .webdev-port {
-	@include column(3);
-	display: inline-block;
-	height: 450px;
-	background: $firstcol;
-	color: #fff;
-	p {
-		text-align: right;
-	}
-	ul {
-		li {
-			text-align: right;
-		}
-	}
-	img {
-		width: 100%;
-	}
+  @include column(3);
+  display: inline-block;
+  height: 450px;
+  background: $firstcol;
+  color: #fff;
+  p {
+    text-align: right;
+  }
+  ul {
+    li {
+      text-align: right;
+    }
+  }
+  img {
+    width: 100%;
+  }
 }
 
 .webdev-port-text {
-	padding: 10px;
+  padding: 10px;
 }
 
 .webdev-port-text {
-	padding: 10px;
+  padding: 10px;
 }
 
 .connect {
-	display: block;
-	@include column(12);
+  display: block;
+  @include column(12);
 }
 
 // QUOTES
 
 .quotes {
-	text-align: center;
-	position: relative;
-	padding: 10px;
-	background: $secondcol;
-	p {
-		color: #fff;
-		text-align: center;
-		padding: 10px;
-	}	
-	img {
-		border-radius: 50%;
-		border: #fff solid 1px;
-		padding: 5px; 
-		margin: 0 20px;
-		width: 150px;
-	}
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  background: $secondcol;
+  p {
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+  }  
+  img {
+    border-radius: 50%;
+    border: #fff solid 1px;
+    padding: 5px; 
+    margin: 0 20px;
+    width: 150px;
+  }
 }
 
 .img-right {
-	float: right;
+  float: right;
 }
 
 .img-left {
-	float: left;
+  float: left;
 }
 
 // BOTTOM 
 
 .bottom {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
 // CONTACT
 
 .form {
-	display: inline;
+  margin: 0 auto;
+  h2 {    
+    text-align: center;
+  }
+  form {
+    max-width: 410px;
+    margin: auto;
+  }
 }
 
 input,textarea {
-	display: block;
-	padding: 5px;
-	margin: 5px;
-	font-size: 14px;
-	width: 400px;
-	border: $firstcol 2px solid;
-	background: #fff;
+  display: block;
+  padding: 5px;
+  margin: 5px;
+  font-size: 14px;
+  width: 400px;
+  border: $firstcol 2px solid;
+  background: #fff;
 }
 
 input[type=submit] {
-	background: #fff;
-	width: 100px;
-	box-shadow: 0;
-	display: inline;
+  background: #fff;
+  width: 100px;
+  box-shadow: 0;
+  display: inline;
 }
 
 // FOOTER
 
 .footer {
-	width: 100%;
-	text-align: center;
-	background: $secondcol;
-	padding: 15px 0;
+  width: 100%;
+  text-align: center;
+  background: $secondcol;
+  padding: 15px 0;
 
-	p {
-		font-size: 12px;
-		margin: 0;
-		text-align: center;
-	}
+  p {
+    font-size: 12px;
+    margin: 0;
+    text-align: center;
+  }
 }
 
 .desktophidden {
-	display: none;
+  display: none;
 }
 
 // BLOG STUFF - Jekyll did most of this, I changed a bit of it
 
 ul, ol {
-	margin: 15px 0;
-	padding-left: 30px;
+  margin: 15px 0;
+  padding-left: 30px;
 }
 
 ul {
-	list-style-type: disc;
+  list-style-type: disc;
 }
 
 ol {
-	list-style-type: decimal;
+  list-style-type: decimal;
 }
 
 ol ul, ul ol, ul ul, ol ol {
-	margin: 0;
+  margin: 0;
 }
 
 ul ul, ol ul {
-	list-style-type: circle;
+  list-style-type: circle;
 }
 
 em {
-	font-style: italic;
+  font-style: italic;
 }
 
 strong {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 .date {
-	font-style: italic;
-	color: $gray;
-	margin: 10px;
+  font-style: italic;
+  color: $gray;
+  margin: 10px;
 }
 
 /*********************/
@@ -467,25 +476,25 @@ img {
 //
 
 .wrapper-masthead {
-	margin-bottom: 10px;
-	padding: 45px 0 0;
-	text-align: center;
-	h3 {
-		text-align: center;
-	}
-	img {
-		width: 45%;
-	}
+  margin-bottom: 10px;
+  padding: 45px 0 0;
+  text-align: center;
+  h3 {
+    text-align: center;
+  }
+  img {
+    width: 45%;
+  }
 }
 
 .masthead {
-	padding: 50px 0 0;
-	border-bottom: 1px solid $firstcol;
-	text-align: center;
+  padding: 50px 0 0;
+  border-bottom: 1px solid $firstcol;
+  text-align: center;
 
-	@include mobile {
-		text-align: center;
-	}
+  @include mobile {
+    text-align: center;
+  }
 }
 
 //
@@ -493,53 +502,53 @@ img {
 //
 
 .posts > .post {
-	padding-bottom: 2em;
-	border-bottom: 1px solid $firstcol;
+  padding-bottom: 2em;
+  border-bottom: 1px solid $firstcol;
 }
 
 .posts > .post:last-child {
-	padding-bottom: 1em;
-	border-bottom: none;
+  padding-bottom: 1em;
+  border-bottom: none;
 }
 
 .post { 
-	blockquote {
-		margin: 1.8em .8em;
-		border-left: 2px solid $secondcol;
-		padding: 0.1em 1em;
-		color: $gray;
-		font-size: 22px;
-		font-style: italic;
-	}
+  blockquote {
+    margin: 1.8em .8em;
+    border-left: 2px solid $secondcol;
+    padding: 0.1em 1em;
+    color: $gray;
+    font-size: 22px;
+    font-style: italic;
+  }
 
-	.comments {
-		margin-top: 10px;
-	}
+  .comments {
+    margin-top: 10px;
+  }
 
-	.read-more {
-		text-transform: uppercase;
-		font-size: 15px;
-	}
-	h1 {
-		a {
-			@include fontstuffs(1.7);
-			text-transform: capitalize;
-		}
-	@include fontstuffs(1.7);
-	text-transform: capitalize;
-	}
+  .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+  h1 {
+    a {
+      @include fontstuffs(1.7);
+      text-transform: capitalize;
+    }
+  @include fontstuffs(1.7);
+  text-transform: capitalize;
+  }
 
-	h2 {
-	@include fontstuffs(1.3);
-	text-align: left;	
-	color: $lightGray;
-	}
+  h2 {
+  @include fontstuffs(1.3);
+  text-align: left;  
+  color: $lightGray;
+  }
 
-	h3 {
-	@include fontstuffs(1);
-	text-align: left;
-	color: $darkGray;	
-	}
+  h3 {
+  @include fontstuffs(1);
+  text-align: left;
+  color: $darkGray;  
+  }
 
 }
 
