@@ -117,8 +117,8 @@ a {
 
 .lightbulb {
   color: yellow;
-    font-size: 50px;
-    font-weight: bold;
+  font-size: 50px;
+  font-weight: bold;
   position: absolute;
   top: 10px;
   left: 42%;
@@ -129,7 +129,6 @@ a {
   -webkit-animation: flash 4s linear infinite;
   -moz-transform: rotate(45deg);
   -moz-animation: flash 4s linear infinite;
-
 }
 
 @keyframes flash {
@@ -300,11 +299,20 @@ a {
 
 // PHOTOGRAPHY
 
-
 .flickr {
   @include column(4);
   img {
-    width: 90%;
+    width: 100%;
+  }
+}
+
+// PHOTO PORTFOLIO
+
+.photos-portfolio {
+  @include column(3);
+
+  img {
+    width: 100%;
   }
 }
 
