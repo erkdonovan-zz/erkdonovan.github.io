@@ -16,8 +16,8 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 800px;
-  padding: 0 10px;
+  max-width: 900px;
+  padding: 20px 5px;
   width: 100%;
 }
 
@@ -181,6 +181,19 @@ a {
   }
 }
 
+.social-contact {
+  text-align: center;
+  li {
+    a {
+      color: #000;
+      &:hover {
+        color: $secondcol;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 // GENERAL
 
 .webhidden {
@@ -197,7 +210,7 @@ a {
 // SECTIONS
 
 .section {
-  padding: 60px 0;
+  padding: 5px 0 25px;
   &:nth-child(even) {
     background: $section1;
   }
@@ -226,11 +239,11 @@ a {
       display: inline-block;
       padding: 30px 0;
       a {
-        padding: 20px;
+        padding: 10px;
         color: #000;
         text-transform: uppercase;
         &:hover {
-          color: $thirdcol;
+          color: #fff;
           text-decoration: none;
         }
       }
@@ -238,15 +251,12 @@ a {
   }
 }
 
-.nav-blog {
-  position: fixed;
-}
 
 // ABOUT
 
 .about {
   margin: 0 auto;
-  padding: 100px 0 75px;
+  padding: 10px 0 25px;
 }
 
 .aboutimg {
@@ -254,9 +264,10 @@ a {
   text-align: center;
   margin: 70px 0;
   img {
-    width: 250px;
+    width: 200px;
     border: $secondcol 2px solid;
     padding: 5px;
+    border-radius: 50%;
   }
   p {
     text-align: center;
@@ -356,7 +367,7 @@ a {
   text-align: center;
   position: relative;
   padding: 10px;
-  background: $secondcol;
+  background: $firstcol;
   p {
     color: #fff;
     text-align: center;

@@ -1,0 +1,119 @@
+---
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Erika Donovan</title>
+  <!-- FONTS -->
+  <link href='http://fonts.googleapis.com/css?family=Kaushan+Script|Handlee|Source+Sans+Pro:400,700' rel='stylesheet' type='text/css'> 
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <!-- STYLE SHEET -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- FAV ICON -->
+  <link type="image/png" href="images/favicon.png" rel="icon">
+  <!-- FACEBOOK TAGS -->
+  <meta property="og:title" content="Erika Donovan">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://www.erikadonovan.com">
+  <meta property="og:image" content="http://www.erikadonovan.com/images/logo.png">
+  <meta property="og:site_name" content="Erika Donovan">
+  <meta property="og:description" content="Photographer. Front-End Developer. Crocheter.">
+  <!-- GOOGLE ANALYTICS -->
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48722502-1', 'erikadonovan.com');
+  ga('send', 'pageview');
+
+  </script>
+
+</head>
+<body>
+  <!-- NAV -->
+  <div class="nav" id="nav">
+    <ul>
+      <li> &lt;/ <i class="fa fa-camera-retro fa-1x"></i> &gt;</li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="photography.html">Photography</a></li>
+      <li><a href="webdevelopment.html">Web Development</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="/blog">Lastest Work</a></li>
+    </ul>
+  </div>
+  <!-- ABOUT -->
+  <div class="about section" id="about">
+    <div class="wrapper clearfix">
+      <div class="aboutme">
+        <div class="aboutimg">
+          <img src="images/erika.jpg" alt="Photo of me">
+          <p><strong>Lastest Post:</strong>
+            {% for post in site.posts limit: 1 %}
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            {% endfor %} </p>
+            <ul class="social social-contact">
+              <li><a href="mailto:hello@erikadonovan.com"><i class="fa fa-envelope fa-2x"></i></a></li>
+              <li><a href="http://www.twitter.com/erkdonovan/"><i class="fa fa-twitter fa-2x"></i></a></li>
+              <li><a href="https://github.com/erkdonovan"><i class="fa fa-github-alt fa-2x"></i></a></li>
+              <li><a href="https://www.flickr.com/photos/erikaruth/sets/"><i class="fa fa-flickr fa-2x"></i></a></li>
+              <li><a href="http://medium.com/@erkdonovan"><i class="fa fa-bookmark fa-2x"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="abouttext">
+          <h2>Hi! I'm Erika!</h2>
+          <h4>I love building websites and taking photos!</h4>
+          <h3>My first camera...</h3>
+          <p>I discovered photography in a Happy Meal. The lime green camera came with the meal (chicken nuggets...I believe) and it started my obsession with taking beautiful photos. I took photos of everything! My family, our pets, random stranger’s pets, trees… everything! Since my dad is a photographer, he passed down one of his older film cameras to me when I was 12 and taught me some tips and tricks. Now I focus on family portraits and sport photos. <span class="standout">My first camera was in a Happy Meal and now photography is my Happy Place.</span></p>
+          <h3>My first website...</h3>
+          <p>I taught myself HTML in when I was high school. I was curious about how the Internet worked and how websites were built. My dad bought me my first book on HTML and I taught myself. I built my first website at age 15 for my friends’ sports teams. Recently, I started working in the tech industry and fell back in love with the tech world. I have recently started taking HackerYou courses to learn how to build amazingly, wonderful, creative, static websites. <span class="standout">What I love most is how you can take letters and characters and build something beautiful.</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- SKILLS -->
+  <div class="skills clearfix">
+    <div class="skills-items">
+      <i class="fa fa-camera fa-2x"></i>
+      <h5>Photography</h5>
+      <p>Family and Sports</p>
+    </div>
+    <div class="skills-items">
+      <i class="fa fa-code fa-2x"></i>
+      <h5>Coding</h5>
+      <p>HTML5, CSS3, Responsive Design</p>
+    </div>
+    <div class="skills-items">
+      <i class="fa fa-paint-brush fa-2x"></i>
+      <h5>Creative</h5>
+      <p>Painting & Crocheting</p>
+    </div>
+    <div class="skills-items">
+      <i class="fa fa-strikethrough fa-2x"></i>
+      <h5>Editing</h5>
+      <p>Novellas and short stories</p>
+    </div>
+    <div class="skills-items">
+      <i class="fa fa-cutlery fa-2x"></i>
+      <h5>Baking</h5>
+      <p>Muffins, French Macarons, Cakes</p>
+    </div>
+    <div class="skills-items">
+      <i class="fa fa-check fa-2x"></i>
+      <h5>Certified</h5>
+      <p>Smart Serve and First Aid & CPR</p>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p><i class="fa fa-copyright"></i> erika donovan</p>
+  </div>
