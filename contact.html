@@ -35,8 +35,8 @@
 
 </head>
 <body>
-    <!-- NAV -->
-  <div class="nav clearfix" id="nav">
+  <!-- NAV -->
+  <div class="nav" id="nav">
     <ul>
       <li> &lt;/ <i class="fa fa-camera-retro fa-1x"></i> &gt;</li>
       <li><a href="index.html">Home</a></li>
@@ -48,26 +48,31 @@
     </ul>
   </div>
 
-  <!-- HEADER  -->
-  <div class="header">
-    <div class="wrapperheader">
-      <div class="lightbulb mobilehidden">&#10038;</div>
-      <img src="images/logo-with-name.png" alt="Erika Donovan Logo">
-      <h3>Photographer & Web Developer</h3>
-      <ul class="social">
+
+  <!-- CONTACT -->
+  <div class="bottom section" id="contact">
+    <div class="wrapper">
+      <div class="form">
+        <h2>Contact Me!</h2>
+        <form action="http://formspree.io/hello@erikadonovan.com" method="POST">
+          <input type="text" name="name" placeholder="Name">
+          <input type="email" name="_replyto" placeholder="Email">
+          <textarea id="message" name="message" class="textarea" spellcheck="true" rows="10" cols="50" placeholder="Message"></textarea>
+          <input type="submit" value="Send">
+        </form>
+        <h2>Contect with Me!</h2>
+        <ul class="social social-contact">
         <li><a href="mailto:hello@erikadonovan.com"><i class="fa fa-envelope fa-2x"></i></a></li>
         <li><a href="http://www.twitter.com/erkdonovan/"><i class="fa fa-twitter fa-2x"></i></a></li>
         <li><a href="https://github.com/erkdonovan"><i class="fa fa-github-alt fa-2x"></i></a></li>
         <li><a href="https://www.flickr.com/photos/erikaruth/sets/"><i class="fa fa-flickr fa-2x"></i></a></li>
         <li><a href="http://medium.com/@erkdonovan"><i class="fa fa-bookmark fa-2x"></i></a></li>
       </ul>
+      </div>
     </div>
   </div>
 
-<!-- FOOTER -->
-<div class="footer">
-  <p><i class="fa fa-copyright"></i> erika donovan</p>
-</div>
-
-</body>
-</html>
+  <!-- FOOTER -->
+  <div class="footer">
+    <p><i class="fa fa-copyright"></i> erika donovan</p>
+  </div>
