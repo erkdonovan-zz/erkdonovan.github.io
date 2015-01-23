@@ -6,7 +6,7 @@ categories:
 - Work
 ---
 
-A few weeks ago, while a month ago in December two co-workers and I made our way over to the University of Toronto campus to do an interview for our website series on Influencers and Founders. The person of interest today: Steve Mann. My job was to take photos of the research lab and profile photos of Steve Mann himself. Gwen was in charge of the interview portion and Rachel art-directed the whole thing! It was amazing! 
+A month ago, in December, two co-workers and I made our way over to the University of Toronto campus to do an interview for our website series on Influencers and Founders. The person of interest today: Steve Mann. My job was to take photos of the research lab and profile photos of Steve Mann himself. Gwen was in charge of the interview portion and Rachel art-directed the whole thing! It was amazing! 
 
 When we got there we received a tour of the research lab and was shown how a few of the gadgets worked, including the famous rings.
 
