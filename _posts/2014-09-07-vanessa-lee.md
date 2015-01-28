@@ -5,9 +5,9 @@ categories:
 - Photography
 ---
 
-Last week, in the back alley behind my office building I took a few headshots of Vanessa Lee, Co-Founder of Canvas Labs.
+<img class="header-img" src="../images/blog-images/2014-9/P9092452.jpg"> 
 
-<img src="../images/blog-images/2014-9/P9092452.jpg"> 
+Last week, in the back alley behind my office building I took a few headshots of Vanessa Lee, Co-Founder of Canvas Labs.
 
 Vanessa and I met earlier this year at Project Owl (a co-working space in Toronto) where we were both working. I was interested in her up coming project that she introduced at one of the demo events held by Project Spaces. 
 

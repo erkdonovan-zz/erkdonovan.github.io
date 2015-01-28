@@ -6,11 +6,11 @@ categories:
 - Work
 ---
 
+<img class="header-img" src="../images/blog-images/2015-01/PB282876.JPG"> 
+
 A month ago, in December, two co-workers and I made our way over to the University of Toronto campus to do an interview for our website series on Influencers and Founders. The person of interest today: Steve Mann. My job was to take photos of the research lab and profile photos of Steve Mann himself. Gwen was in charge of the interview portion and Rachel art-directed the whole thing! It was amazing! 
 
 When we got there we received a tour of the research lab and was shown how a few of the gadgets worked, including the famous rings.
-
-<img src="../images/blog-images/2015-01/PB282876.JPG"> 
 
 We even got to try out a prototype for portable lights what help correct the colour of your skin when using computer web cameras. 
 

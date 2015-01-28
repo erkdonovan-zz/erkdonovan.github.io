@@ -6,9 +6,9 @@ categories:
 - Work
 ---
 
-The company that my day job is for (The Blueprint) secured and moved into our own office last week. And with that we needed to have a team dinner to celebrate! One of the items that we are selling online is the Nomiku, a sous vide home cooking kitchen tool, and my co-worker Dan (pictured below) had been using one for a few months. 
+<img class="header-img" src="../images/blog-images/2014-9/P8182046.JPG"> 
 
-<img src="../images/blog-images/2014-9/P8182046.JPG"> 
+The company that my day job is for (The Blueprint) secured and moved into our own office last week. And with that we needed to have a team dinner to celebrate! One of the items that we are selling online is the Nomiku, a sous vide home cooking kitchen tool, and my co-worker Dan (pictured below) had been using one for a few months. 
 
 I was asked to take photos of the processes and the dinner to document the evening for a post on our website. I don’t eat steak. I don’t like meat that is still pink, I mentally can not eat food that appears to be bleeding, even if it isn’t. But I loved the chance to take the photos. I loved that my work asked me to do it. 
 

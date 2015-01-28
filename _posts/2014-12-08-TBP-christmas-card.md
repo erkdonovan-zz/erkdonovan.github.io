@@ -7,11 +7,11 @@ categories:
 - Work
 ---
 
+<img class="header-img" src="../images/blog-images/2014-12/PB282887.JPG"> 
+
 A few weeks ago I was asked to build the company Christmas Card page. Thankfully we have an amazing designer (Rachel) on staff who designed the page and all I had to do was take the team photo and build the web page. 
 
 We started to go with a Home Alone theme card since one co-worker is based out of New York. We also planned to take a few shots inside since we have nice brick walls in the office. 
-
-<img src="../images/blog-images/2014-12/PB282887.JPG"> 
 
 We tried a “we’re freezing inside” photo:
 
