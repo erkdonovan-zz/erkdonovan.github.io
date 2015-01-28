@@ -82,6 +82,7 @@ a {
 .wrapper {
   max-width: 80%;
   margin: 0 auto;
+  padding: 10px 0;
 }
 
 // HEADER
@@ -223,10 +224,6 @@ a {
   @include column(6);
 }
 
-.full-left, .full-right {
-  @include column(6);
-}
-
 // NAV 
 
 .nav {
@@ -310,22 +307,22 @@ a {
 
 // PHOTOGRAPHY
 
+.photo-albums {
+  @include column(12);
+}
+
 .flickr {
-  @include column(4);
-  img {
-    width: 100%;
-  }
-}
-
-// PHOTO PORTFOLIO
-
-.photos-portfolio {
   @include column(3);
-
+  @include push(1);
+  padding: 20px 10px;
   img {
     width: 100%;
   }
+  p {
+    text-align: center;
+  }
 }
+
 
 // WEB DEV
 
@@ -358,7 +355,13 @@ a {
 
 .connect {
   display: block;
+  text-align: center;
   @include column(12);
+  a {
+    font-size: 24px;
+    color: $secondcol;
+      padding: 20px 0;
+  }
 }
 
 // QUOTES
@@ -388,6 +391,16 @@ a {
 
 .img-left {
   float: left;
+}
+
+.full-left, .full-right {
+  @include column(6);
+}
+
+.full-center {
+  @include column(6);
+  @include push(3);
+  @include pull(3);
 }
 
 // BOTTOM 
